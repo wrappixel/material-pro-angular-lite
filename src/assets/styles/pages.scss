@@ -1,0 +1,310 @@
+/*
+Template Name: Material Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+
+/*============================================================== 
+ For all pages 
+ ============================================================== */
+
+
+/*******************
+ Main container
+*******************/
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+} 
+
+.mat-drawer-container{
+    background: $bodycolor;
+    
+}
+
+html .page-wrapper{
+    height:calc(100vh - 64px);
+    .page-content{
+        padding: 15px;
+    }
+}
+
+/*******************
+ Login register
+*******************/
+.login-register{
+    height:100vh;
+    display: flex;
+    background-size:cover; 
+    align-items: center;
+    .mat-card{
+        margin: 0px 15px;
+    }
+    .mat-form-field{
+        width: 100%;
+    }
+    .login-register-box{
+        max-width: 400px;
+        min-width: 280px;
+        margin: 0 auto;
+        vertical-align: middle;
+    }
+    .support-text{
+        margin-top: -15px;
+        display: block;
+        padding-bottom: 15px;
+    }
+}
+.error-card{
+    h1{
+      font-size: 210px;
+      font-weight: 900;
+      line-height: 210px;
+      margin: 0px;
+      text-shadow: 4px 5px 1px #b3bbbf;    
+    }
+}
+
+.ngx-datatable.material{
+    box-shadow: none;
+    border:1px solid $border;
+}
+/*******************
+ Calendar page
+*******************/
+.cal-event-action{
+    text-decoration: none;
+    margin: 0 3px;
+}
+.cal-header{
+    border-left:1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+
+.act{
+    color:white;
+    
+    &:hover{
+        color:aqua;
+    }
+}
+/*******************
+ Mail page
+*******************/
+.icon-box{
+    width:20%;
+    display: inline-block;
+}
+/*******************
+ Mail page
+*******************/
+.email-box{
+    border:1px solid $border;
+}
+.email-sidebar{
+    border-right: 1px solid $border;
+    width: 300px;
+    .d-flex{
+        display: flex;
+        padding: 15px 0px;
+        cursor: pointer;
+    }
+    .selected{
+        .d-flex{ 
+            background: $light;
+        }
+    }
+    .icon-avatar{
+        width: 60px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+    .mail-title{
+        font-weight: 500;
+    }
+    .text-ellipsis{
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 200px;
+        text-overflow: ellipsis;
+    }
+    .avatar{
+        width:40px;
+        border-radius: 100%;
+    }
+}
+
+.email-right-panel{
+    padding: 30px;
+    background: $light;
+    .avatar-lg{
+        width: 100px;
+        border-radius: 100%;
+    }
+    .row{
+        
+        overflow: hidden;
+    }
+    .col-md-2{
+        width:20%;
+        padding: 10px;
+        float: $lft;
+    }
+}
+.align-items-center{
+    align-items: center;
+}
+.bottom-right{
+    position: absolute!important;
+    right:40px;
+    bottom:40px;
+    z-index: 10;
+}
+.chat-right-panel{
+   .top-avatar{
+       
+       img{
+         width:40px; 
+         vertical-align: middle;   
+       } 
+    }
+    
+}
+.chat-middle-box{
+    border-left:1px solid $border;
+    background: $white;
+    margin-bottom: 0px!important;
+}
+.chat-footer{
+    padding: 10px 15px!important;
+    background: $white;
+    border-top:1px solid $border;
+    border-left:1px solid $border;
+  }
+.chat-list{
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+    display: flex;
+    &.even{
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        -moz-justify-content: flex-end;
+        justify-content: flex-end;
+        text-align: right;
+        
+    }
+}
+.chat-block{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: $light;
+    border-radius: 6px;
+    img{
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+.chat-date{
+    font-size:12px;
+    color:$muted;
+}
+
+/*******************
+Chartistt chart css
+******************/
+.barchrt{
+    .ct-series-a .ct-bar{
+        stroke:$success;
+    }
+    .ct-series-b .ct-bar{
+        stroke:$info;
+    }
+}
+
+.linearea {
+  height: 280px;
+  .ct-series-a .ct-area {
+    fill-opacity: 0.05;
+    fill: $success;
+  }
+  .ct-series-a .ct-line,
+  .ct-series-a .ct-point {
+    stroke: $success;
+    stroke-width: 2px;
+  }
+  .ct-series-b .ct-area {
+    fill: $info;
+    fill-opacity: 0.1;
+  }
+  .ct-series-b .ct-line,
+  .ct-series-b .ct-point {
+    stroke: $info;
+    stroke-width: 2px;
+  }
+  .ct-series-c .ct-area {
+    fill: $danger;
+    fill-opacity: 0.1;
+  }
+  .ct-series-c .ct-line,
+  .ct-series-c .ct-point {
+    stroke: $danger;
+    stroke-width: 2px;
+  }
+  .ct-series-a .ct-point,
+  .ct-series-b .ct-point,
+  .ct-series-c .ct-point{
+    stroke-width: 6px;
+  }
+}
+.piechart{
+    .ct-series-a .ct-slice-donut{
+        stroke:$info
+    }
+    .ct-series-b .ct-slice-donut{
+        stroke:$success
+    }
+    .ct-series-c .ct-slice-donut{
+        stroke:$purple
+    }
+    .ct-series-d .ct-slice-donut{
+        stroke:$light
+    }
+    .ct-series-e .ct-slice-donut{
+        stroke:$warning
+    }
+}
+
+
+/*******************
+Pricing scss
+******************/
+html {
+    .popular-plan{
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    .price-listing{
+    margin-bottom: 30px;
+        .mat-list-item{
+            height: auto;
+            .mat-list-item-content{
+                display: block;
+                padding: 20px 0;
+            }
+        }
+    }
+}
+                    
