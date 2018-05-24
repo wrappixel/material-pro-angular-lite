@@ -12,7 +12,7 @@
 
     <h4 class="m-b-0">With Min and Max</h4>
     <mat-form-field><input [(ngModel)]="min" matInput > </mat-form-field> <mat-form-field> <input [(ngModel)]="max" matInput></mat-form-field><br/>
-    <mat-slider [min]="min" [max]="max" tick-interval="5" #slider2 color="warn"></mat-slider>
+    <mat-slider [min]="min" [max]="max" tickInterval="5" #slider2 color="warn"></mat-slider>
     {{slider2.value}}
     
 
@@ -28,11 +28,11 @@
     {{slider5.value}}
 
       <h4 class="m-b-0">Slider with set tick interval</h4>
-    <mat-slider tick-interval="auto"></mat-slider>
-    <mat-slider tick-interval="9"></mat-slider>
+    <mat-slider tickInterval="auto"></mat-slider>
+    <mat-slider tickInterval="9"></mat-slider>
 
       <h4 class="m-b-0">Slider with Thumb Label</h4>
-    <mat-slider thumb-label></mat-slider>
+    <mat-slider thumbLabel></mat-slider>
 
       <h4 class="m-b-0">Slider with one-way binding</h4>
     <mat-slider [value]="val" step="40"></mat-slider>
@@ -43,11 +43,11 @@
       <mat-form-field><input [(ngModel)]="demo" matInput></mat-form-field>
 
       <h4 class="m-b-0">Inverted slider</h4>
-    <mat-slider invert value="50" tick-interval="5"></mat-slider>
+    <mat-slider invert value="50" tickInterval="5"></mat-slider>
 
     
 
       <h4 class="m-b-0">Inverted vertical slider</h4>
-    <mat-slider vertical invert thumb-label tick-interval="auto" value="50"></mat-slider>
+    <mat-slider vertical invert thumbLabel tickInterval="auto" value="50"></mat-slider>
   </mat-card-content>
 </mat-card>

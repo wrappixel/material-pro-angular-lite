@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import {Component} from '@angular/core';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +7,5 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./tabs.component.scss']
 })
 export class TabsComponent {
-  
+
 }
- 
