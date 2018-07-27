@@ -1,0 +1,47 @@
+//landing page style
+.font-16{
+    font-size: 16px;
+}
+
+.font-weight-medium{
+    font-weight: 500;
+}
+.live-box {
+    position: relative;
+    border:1px solid $gray-200;
+    .overlay {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        height: 100%;
+        display: none;
+        .live-btn {
+            position: relative;
+            top: 45%;
+            padding: 10px 20px;
+        }
+    }
+    &:hover {
+        .overlay {
+            display: block;
+        }
+    }
+}
+.listing{
+    li{
+        line-height:37px;
+        i{
+            margin-right:5px;
+        }
+    }
+}
+.pro-demo{
+    box-shadow: 0px 4px 45px rgba(0,0,0,0.09);
+}
+
+.line-h33{
+    line-height:33px; 
+}
