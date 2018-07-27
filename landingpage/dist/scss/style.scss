@@ -1,0 +1,16 @@
+/*
+Template Name: Material-Pro Admin Template
+Author: Niravjoshi / Wrappixel
+File: scss
+*/
+//(Required file)
+@import 'variable';
+
+// Import Bootstrap source files (Required file)
+@import "bootstrap/bootstrap";
+
+//custom style
+@import 'custom';
+
+//icons
+@import "../../../lite/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css";
