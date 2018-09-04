@@ -7,8 +7,8 @@ File: scss
 // Variables
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
-$bodyfont:'Poppins', sans-serif;
-$headingfont:'Poppins', sans-serif; 
+$bodyfont: 'Poppins', sans-serif;
+$headingfont: 'Poppins', sans-serif;
 
 @import '~@angular/material/theming';
 
@@ -23,7 +23,7 @@ $foreground: map-get($theme, foreground);
 
 @include mat-core();
 
-$custom-typography: mat-typography-config( 
+$custom-typography: mat-typography-config(
   $font-family: 'Poppins, sans-serif'
 );
 
@@ -33,20 +33,19 @@ $custom-typography: mat-typography-config(
 // Default Theme
 @include angular-material-theme($theme);
 
-
 // Dark Theme
 
 /*Theme Colors*/
- 
+
 $topbar: #2196f3;
 $sidebar: #fff;
 $sidebar-white: #e5edef;
-$sidebar-alt:#f2f6f8;
+$sidebar-alt: #f2f6f8;
 $bodycolor: #eef5f9;
 $headingtext: #455a64;
-$bodytext: #67757c; 
+$bodytext: #67757c;
 $sidebar-text: #607d8b;
-$sidebar-icons: #99abb4 ;
+$sidebar-icons: #99abb4;
 
 $font-16: 16px;
 
@@ -75,9 +74,7 @@ $light-warning: #fff8ec;
 $light-primary: #f1effd;
 $light-info: #e3f3fd;
 $light-inverse: #f6f6f6;
-$light-megna: #e0f2f4; 
-
-
+$light-megna: #e0f2f4;
 
 $danger-dark: #e6294b;
 $success-dark: #1eacbe;
@@ -86,7 +83,7 @@ $primary-dark: #6352ce;
 $info-dark: #028ee1;
 $red-dark: #d61f1f;
 $inverse-dark: #232a37;
-$dark-transparent:rgba(0, 0, 0, 0.05);
+$dark-transparent: rgba(0, 0, 0, 0.05);
 
 /*Normal Color*/
 $white: #ffffff;
@@ -100,9 +97,8 @@ $megna: #00897b;
 $rgt: right;
 $lft: left;
 $border: rgba(120, 130, 140, 0.13);
-$table-border:#f3f1f1;
-$card-brd:#d7dfe3;
+$table-border: #f3f1f1;
+$card-brd: #d7dfe3;
 $dark-text: #848a96;
 $radius: 4px;
 $form-brd: #d9d9d9;
-
