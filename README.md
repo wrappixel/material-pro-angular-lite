@@ -1,5 +1,6 @@
 # Material
-
+<a href="https://wrappixel.com"><img src="https://wrappixel.com/wp-content/uploads/2017/03/wp-updated-logo.jpg" /></a><br/>
+<a href="https://wrappixel.com/templates/materialpro-angular-dashboard/"><img src="https://wrappixel.com/demos/images/material-pro-upgrade-angular.jpg"/></a>
 This project was generated with [Angular 6 CLI](https://github.com/angular/angular-cli) version 6.0.3
 
 ## Development server
