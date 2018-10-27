@@ -6,10 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./progress-snipper.component.scss']
 })
 export class ProgressSnipperComponent {
-    color = 'warn';
-    mode = 'determinate';
-    value = 50;
-  
-
-  
+  color = 'warn';
+  mode = 'determinate';
+  value = 50;
 }

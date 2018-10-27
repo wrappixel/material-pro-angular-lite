@@ -1,5 +1,10 @@
 import {
-  Directive, HostBinding, Inject, Input, OnInit, OnDestroy
+  Directive,
+  HostBinding,
+  Inject,
+  Input,
+  OnInit,
+  OnDestroy
 } from '@angular/core';
 
 import { AccordionDirective } from './accordion.directive';
@@ -8,13 +13,13 @@ import { AccordionDirective } from './accordion.directive';
   selector: '[appAccordionLink]'
 })
 export class AccordionLinkDirective implements OnInit, OnDestroy {
-
-  @Input() public group: any;
+  @Input()
+  public group: any;
 
   @HostBinding('class.selected')
   @Input()
   get selected(): boolean {
-    return this._selected; 
+    return this._selected;
   }
 
   set selected(value: boolean) {
@@ -33,7 +38,6 @@ export class AccordionLinkDirective implements OnInit, OnDestroy {
 
   ngOnInit(): any {
     this.nav.addLink(this);
-    
   }
 
   ngOnDestroy(): any {

@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
-import { DemoMaterialModule} from '../demo-material-module';
+import { DemoMaterialModule } from '../demo-material-module';
 import { CdkTableModule } from '@angular/cdk/table';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -23,7 +23,10 @@ import { ChipsComponent } from './chips/chips.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ProgressSnipperComponent } from './progress-snipper/progress-snipper.component';
 import { ProgressComponent } from './progress/progress.component';
-import { DialogComponent, DialogOverviewExampleDialog } from './dialog/dialog.component';
+import {
+  DialogComponent,
+  DialogOverviewExampleDialogComponent
+} from './dialog/dialog.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SliderComponent } from './slider/slider.component';
@@ -40,12 +43,8 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
     FlexLayoutModule,
     CdkTableModule
   ],
-  providers: [
-
-  ],
-  entryComponents: [
-    DialogOverviewExampleDialog
-  ],
+  providers: [],
+  entryComponents: [DialogOverviewExampleDialogComponent],
   declarations: [
     ButtonsComponent,
     GridComponent,
@@ -59,12 +58,11 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
     ProgressSnipperComponent,
     ProgressComponent,
     DialogComponent,
-    DialogOverviewExampleDialog,
+    DialogOverviewExampleDialogComponent,
     TooltipComponent,
     SnackbarComponent,
     SliderComponent,
     SlideToggleComponent
   ]
 })
-
 export class MaterialComponentsModule {}

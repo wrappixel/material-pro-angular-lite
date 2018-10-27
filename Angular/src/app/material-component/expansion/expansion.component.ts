@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./expansion.component.scss']
 })
 export class ExpansionComponent {
-  panelOpenState: boolean = false;    
+  panelOpenState = false;
   step = 0;
 
   setStep(index: number) {

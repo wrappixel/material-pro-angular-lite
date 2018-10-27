@@ -6,10 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./slide-toggle.component.scss']
 })
 export class SlideToggleComponent {
-
   color = 'accent';
   checked = false;
   disabled = false;
-
-  
 }

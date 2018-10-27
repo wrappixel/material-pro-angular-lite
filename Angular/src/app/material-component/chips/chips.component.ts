@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import {MatChipInputEvent} from '@angular/material';
-import {ENTER, COMMA} from '@angular/cdk/keycodes' 
+import { MatChipInputEvent } from '@angular/material';
+import { ENTER, COMMA } from '@angular/cdk/keycodes';
 export interface DemoColor {
   name: string;
   color: string;
@@ -10,26 +10,27 @@ export interface DemoColor {
   templateUrl: './chips.component.html',
   styleUrls: ['./chips.component.scss']
 })
-export class ChipsComponent{
+export class ChipsComponent {
+  visible = true;
+  selectable = true;
+  removable = true;
+  addOnBlur = true;
 
-  visible: boolean = true;
-  selectable: boolean = true;
-  removable: boolean = true;
-  addOnBlur: boolean = true;
+  availableColors: DemoColor[] = [
+    { name: 'none', color: 'gray' },
+    { name: 'Primary', color: 'primary' },
+    { name: 'Accent', color: 'accent' },
+    { name: 'Warn', color: 'warn' }
+  ];
 
   // Enter, comma
   separatorKeysCodes = [ENTER, COMMA];
 
-  fruits = [
-    { name: 'Lemon' },
-    { name: 'Lime' },
-    { name: 'Apple' },
-  ];
-
+  fruits = [{ name: 'Lemon' }, { name: 'Lime' }, { name: 'Apple' }];
 
   add(event: MatChipInputEvent): void {
-    let input = event.input;
-    let value = event.value;
+    const input = event.input;
+    const value = event.value;
 
     // Add our fruit
     if ((value || '').trim()) {
@@ -43,17 +44,10 @@ export class ChipsComponent{
   }
 
   remove(fruit: any): void {
-    let index = this.fruits.indexOf(fruit);
+    const index = this.fruits.indexOf(fruit);
 
     if (index >= 0) {
       this.fruits.splice(index, 1);
     }
   }
-    
-    availableColors: DemoColor[] = [
-        { name: 'none', color: 'gray' },
-        { name: 'Primary', color: 'primary' },
-        { name: 'Accent', color: 'accent' },
-        { name: 'Warn', color: 'warn' }
-      ];
 }

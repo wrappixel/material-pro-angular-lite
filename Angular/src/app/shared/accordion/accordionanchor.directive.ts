@@ -6,10 +6,9 @@ import { AccordionLinkDirective } from './accordionlink.directive';
   selector: '[appAccordionToggle]'
 })
 export class AccordionAnchorDirective {
-
   protected navlink: AccordionLinkDirective;
 
-  constructor( @Inject(AccordionLinkDirective) navlink: AccordionLinkDirective) {
+  constructor(@Inject(AccordionLinkDirective) navlink: AccordionLinkDirective) {
     this.navlink = navlink;
   }
 
