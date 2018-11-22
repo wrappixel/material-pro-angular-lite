@@ -6,6 +6,17 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
   templateUrl: './dialog.component.html',
   styleUrls: ['./dialog.component.scss']
 })
+
+export class DialogOverviewExampleDialogComponent {
+  constructor(
+    public dialogRef: MatDialogRef<DialogOverviewExampleDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
 @Component({
   selector: 'app-dialog-overview-example-dialog',
   template: `<h1 mat-dialog-title>Hi {{data.name}}</h1>
@@ -20,16 +31,6 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
   <button mat-button (click)="onNoClick()" tabindex="-1">No Thanks</button>
 </div>`
 })
-export class DialogOverviewExampleDialogComponent {
-  constructor(
-    public dialogRef: MatDialogRef<DialogOverviewExampleDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
-
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
-}
 export class DialogComponent {
   animal: string;
   name: string;
