@@ -2,22 +2,6 @@ import { Component, Inject } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
-  selector: 'app-dialog',
-  templateUrl: './dialog.component.html',
-  styleUrls: ['./dialog.component.scss']
-})
-
-export class DialogOverviewExampleDialogComponent {
-  constructor(
-    public dialogRef: MatDialogRef<DialogOverviewExampleDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
-
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
-}
-@Component({
   selector: 'app-dialog-overview-example-dialog',
   template: `<h1 mat-dialog-title>Hi {{data.name}}</h1>
 <div mat-dialog-content>
@@ -30,6 +14,22 @@ export class DialogOverviewExampleDialogComponent {
   <button mat-button [mat-dialog-close]="data.animal" tabindex="2">Ok</button>
   <button mat-button (click)="onNoClick()" tabindex="-1">No Thanks</button>
 </div>`
+})
+export class DialogOverviewExampleDialogComponent {
+  constructor(
+    public dialogRef: MatDialogRef<DialogOverviewExampleDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+}
+
+@Component({
+  selector: 'app-dialog',
+  templateUrl: './dialog.component.html',
+  styleUrls: ['./dialog.component.scss']
 })
 export class DialogComponent {
   animal: string;
