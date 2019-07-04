@@ -15,11 +15,11 @@ export const AppRoutes: Routes = [
       {
         path: '',
         loadChildren:
-          './material-component/material.module#MaterialComponentsModule'
+          () => import('./material-component/material.module').then(m => m.MaterialComponentsModule)
       },
       {
         path: 'starter',
-        loadChildren: './starter/starter.module#StarterModule'
+        loadChildren: () => import('./starter/starter.module').then(m => m.StarterModule)
       }
     ]
   }
