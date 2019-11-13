@@ -49,7 +49,7 @@ MaterialPro Angular 8 Lite Template is released under MIT license. MaterialPro A
 
 <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/"><img src="https://www.wrappixel.com/wp-content/uploads/2019/01/materialpro-angular-nw-1.jpg"/></a><br/>
 
-<h4><a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Demo</a></h4>
+<h4><a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">View Details</a> | <a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Live Demo</a></h4>
 
 The pro version of MaterialPro Angular 8 template incorporates over 250+ page templates along with four distinctive colour scheme, 25+ angular elements, six unique demos, and multiple user-interface components.
 
