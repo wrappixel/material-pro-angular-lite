@@ -13,13 +13,8 @@ The free version MaterialPro Angular 8 Lite provides you with a library consisti
 <li>Basic Table Examples</li>
 <li>Fully Responsive Pages</li>
 <li>Multiple Widgets – Icons, Tables, and Charts</li>
-<li>Applications – Mailbox, task board, inbox detail, calendar, task board, and chat application.</li>
-<li>Forms – Form wizards, form validation, Data Picker, and basic forms</li>
+<li>Basic forms</li>
 <li>User Interface Elements – Buttons, Editor, Tabs, Accordions, Modals, Progress Bars, Tooltips, cards, notification, Timeline, Snack Bar, Grid List, Progress Spinner, Ratings, Data Picker, and many more.</li>
-<li>Other Pages – Timeline Page, login page, utility classes, Invoice, pricing, and Error 404.</li>
-<li>Menu</li>
-<li>Calendar</li>
-<li>Documentation</li>
 </ul>
 
 ## Development server
