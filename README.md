@@ -18,9 +18,9 @@ The free version MaterialPro Angular 8 Lite provides you with a library consisti
 <li>User Interface Elements – Buttons, Editor, Tabs, Accordions, Modals, Progress Bars, Tooltips, cards, notification, Timeline, Snack Bar, Grid List, Progress Spinner, Ratings, Data Picker, and many more.</li>
 <li>Other Pages – Timeline Page, login page, utility classes, Invoice, pricing, and Error 404.</li>
 <li>Menu</li>
-  <li>Calendar</li>
-  <li>Documentation</li>
-  <ul>
+<li>Calendar</li>
+<li>Documentation</li>
+</ul>
 
 ## Development server
 
@@ -60,30 +60,33 @@ The pro version of MaterialPro Angular 8 template incorporates over 250+ page te
 
 The key features of WrapPixel's MaterialPro Angular 8 pro version include:
 
-4 Colour Schemes - More than four predefined colour schemes.
-30+ Essential User Interface Elements - Dashboard admin pack more than 30 essential angular components.
-Over 2000 Font Icons - Over 2000 unique and attractive font icons.
-Ng Bootstrap 4x - Crafted with Ng Bootstrap 4 along with fully responsive web layouts.
-Calendar Design - Calendar functionality in attractive and interesting designs.
-Detailed Documentation - Detailed documentation makes the template convenient and easy to use.
-•	2+ unique and attractive dashboards
-•	Open source web application
-•	Six distinctive live demos
-•	5+ predefined colour skins
-•	Dark and light colour schemes
-•	Over 40 angular elements
-•	SaSS based CSS
-•	Clean, attractive, and engaging site landing pages
-•	Dashboard PSD files
-•	Multiple Widgets
-•	Mega Menu
-•	Fully responsive web pages
-•	Quick and easy customization
-•	Multiple file upload
-•	Validation forms
-•	Data tables and charts
+4 Colour Schemes - More than four predefined colour schemes.<br><br>
+30+ Essential User Interface Elements - Dashboard admin pack more than 30 essential angular components.<br><br>
+Over 2000 Font Icons - Over 2000 unique and attractive font icons.<br><br>
+Ng Bootstrap 4x - Crafted with Ng Bootstrap 4 along with fully responsive web layouts.<br><br>
+Calendar Design - Calendar functionality in attractive and interesting designs.<br><br>
+Detailed Documentation - Detailed documentation makes the template convenient and easy to use.<br>
+<ul>
+<li>2+ unique and attractive dashboards</li>
+<li>Open source web application</li>
+<li>Six distinctive live demos</li>
+<li>5+ predefined colour skins</li>
+<li>Dark and light colour schemes</li>
+<li>Over 40 angular elements</li>
+<li>SaSS based CSS</li>
+<li>Clean, attractive, and engaging site landing pages</li>
+<li>Dashboard PSD files</li>
+<li>Multiple Widgets</li>
+<li>Mega Menu</li>
+<li>Fully responsive web pages</li>
+<li>Quick and easy customization</li>
+<li>Multiple file upload</li>
+<li>Validation forms</li>
+<li>Data tables and charts</li>
+</ul>
 
 ## The WrapPixel Advantage: Unlimited updates and dedicated support
-•	Once you purchase a WrapPixel's template you can rest easy knowing that you'll be entitled to a free download of all our future updates for lifetime.
-•	Our dedicated support team is at your service for any queries or clarifications. Simply send us your query at https://www.wrappixel.com/support/ for quick resolution of your concerns.
-
+<ul>
+<li>Once you purchase a WrapPixel's template you can rest easy knowing that you'll be entitled to a free download of all our future updates for lifetime.</li>
+</li>Our dedicated support team is at your service for any queries or clarifications. Simply send us your query at https://www.wrappixel.com/support/ for quick resolution of your concerns.</li>
+</ul>
