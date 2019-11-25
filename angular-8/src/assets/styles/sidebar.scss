@@ -5,7 +5,6 @@ Email: niravjoshi87@gmail.com
 File: scss
 */
 
-$mini-sidebar-width: 80px;
 /*******************
 Main sidebar
 ******************/
@@ -76,35 +75,12 @@ mat-sidenav {
             font-weight: 500;               
         }
     }
-    .sub-item{
-        display: none;
-        margin-top: -15px;
-         a{
-          padding-left: 28px;
-          height: 50px;
-          margin-bottom: 0px;
-        }
-    }
-    .saperator{
-        cursor: text;
-        font-size: 13px;
-        margin-bottom: 15px;
-        margin-top: 25px;
-        font-weight: 500;
-        white-space: nowrap;
-    }
-    .selected{
-       .sub-item{
-        display: block;
-        } 
-    }
 }
 /*******************
 use profile section
 ******************/
 
-.user-profile {
-    
+.user-profile {  
     position: relative;
     background-size:cover;
     
@@ -190,75 +166,6 @@ use profile section
         }
     }
     
-}
-
-/*============================================================== 
- Small Desktop & above all (1024px) 
- ============================================================== */
-
-@media(min-width:1024px) {
-    .minisidebar #snav{
-        .mat-drawer-backdrop {
-          display: none;
-        }
-        &.mat-sidenav ~ .mat-drawer-content {
-          margin-left: $mini-sidebar-width;
-        }
-        &.mat-sidenav {
-          -webkit-transition: width .2s cubic-bezier(.25,.8,.25,1), transform .2s cubic-bezier(.25,.8,.25,1)!important;
-          transition: width .2s cubic-bezier(.25,.8,.25,1), transform .2s cubic-bezier(.25,.8,.25,1)!important;
-        }
-        &.mat-sidenav:not(:hover) {
-          width: $mini-sidebar-width;
-          .sub-menu, .dd-icon, .selected .sub-item {
-            display: none;
-            visibility: hidden;
-          }
-            .user-profile {
-                .profile-img{
-                   margin-left: 15px;
-                }
-                .profile-text {
-                    visibility: hidden;
-                }
-            }
-            .saperator span{
-                overflow: hidden;
-                text-overflow: ellipsis;
-                width: 40px;
-                display: block;
-            }
-          .mat-list-item > .mat-list-item-content > a {
-            padding-right: 0;
-            padding-left: 0;
-            text-align: center;
-              
-          }
-          .mat-list-item > .mat-list-item-content > a > span:not(.menu-badge),
-          .mat-list-item > .mat-list-item-content > a > .menu-caret {
-            display: none;
-          }
-          .mat-list-item > .mat-list-item-content > a > span.menu-badge {
-            position: absolute;
-            top: 10px;
-            right: 16px;
-          }
-          .mat-list-item > .mat-list-item-content > a > .material-icons {
-            width: $mini-sidebar-width!important;
-            padding: 0;
-            margin: 0;
-          }
-        }
-    }
-    [dir="rtl"] {
-        app-sidebar{
-          display: block; overflow: hidden;
-        }
-        .minisidebar #snav.mat-sidenav ~ .mat-drawer-content {
-          margin-left: 0px!important;
-          margin-right: $mini-sidebar-width!important;
-        }
-    }
 }
 
 

@@ -3,16 +3,18 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { DemoMaterialModule } from '../demo-material-module';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { StarterComponent } from './starter.component';
-import { StarterRoutes } from './starter.routing';
+import { DashboardComponent } from './dashboard.component';
+import { DashboardRoutes } from './dashboard.routing';
+import { ChartistModule } from 'ng-chartist';
 
 @NgModule({
   imports: [
     CommonModule,
     DemoMaterialModule,
     FlexLayoutModule,
-    RouterModule.forChild(StarterRoutes)
+    ChartistModule,
+    RouterModule.forChild(DashboardRoutes)
   ],
-  declarations: [StarterComponent]
+  declarations: [DashboardComponent]
 })
-export class StarterModule {}
+export class DashboardModule {}

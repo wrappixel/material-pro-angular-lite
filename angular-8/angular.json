@@ -21,6 +21,7 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "node_modules/chartist/dist/chartist.css",
               "src/styles.css",
               "src/assets/styles/style.scss"
             ],

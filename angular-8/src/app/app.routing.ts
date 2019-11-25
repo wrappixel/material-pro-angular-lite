@@ -9,7 +9,7 @@ export const AppRoutes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: '/starter',
+        redirectTo: '/dashboard',
         pathMatch: 'full'
       },
       {
@@ -18,8 +18,8 @@ export const AppRoutes: Routes = [
           () => import('./material-component/material.module').then(m => m.MaterialComponentsModule)
       },
       {
-        path: 'starter',
-        loadChildren: () => import('./starter/starter.module').then(m => m.StarterModule)
+        path: 'dashboard',
+        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
       }
     ]
   }

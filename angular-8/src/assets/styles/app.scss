@@ -677,213 +677,10 @@ Rounds
         border-radius: 100%;
     }
 }
-.round-lg{
-    line-height:65px;
-    width: 60px;
-    height: 60px;
-    font-size:30px;
-}
 .round.round-info{
     background: $info;
 }
-.round.round-warning{
-    background: $warning;
-}
-.round.round-danger{
-    background: $danger;
-}
-.round.round-success{
-    background: $success;
-}
-.round.round-primary{
-    background: $primary;
-}
-/*******************
-Labels
-*******************/
 
-.label {
-    padding: 3px 10px;
-    line-height: 13px;
-    color: $white;
-    font-weight: 400;
-    border-radius: $radius;
-    font-size: 75%;
-}
-
-.label-rounded {
-    border-radius: 60px;
-}
-
-.label-custom {
-    background-color: $megna;
-}
-
-.label-success {
-    background-color: $success;
-}
-
-.label-info {
-    background-color: $info;
-}
-
-.label-warning {
-    background-color: $warning;
-}
-
-.label-danger {
-    background-color: $danger;
-}
-
-.label-megna {
-    background-color: $megna;
-}
-
-.label-primary {
-    background-color: $primary;
-}
-
-.label-purple {
-    background-color: $purple;
-}
-
-.label-red {
-    background-color: $red;
-}
-
-.label-inverse {
-    background-color: $inverse;
-}
-
-.label-default {
-    background-color: $light;
-}
-
-.label-white {
-    background-color: $white;
-}
-
-
-.label-light-success {
-    background-color: $light-success;
-    color:$success;
-}
-
-.label-light-info {
-    background-color: $light-info;
-    color:$info;
-}
-
-.label-light-warning {
-    background-color: $light-warning;
-    color:$warning;
-}
-
-.label-light-danger {
-    background-color: $light-danger;
-    color:$danger;
-}
-
-.label-light-megna {
-    background-color: $light-megna;
-    color:$megna;
-}
-
-.label-light-primary {
-    background-color: $light-primary;
-    color:$primary;
-}
-
-.label-light-inverse {
-    background-color: $light-inverse;
-    color:$inverse;
-}
-
-
-
-/*******************
-Notify
-*******************/
-
-.notify {
-    position: relative;
-    top: -20px;
-    right:0px;
-    .heartbit {
-        position: absolute;
-        top: -20px;
-        right: -4px;
-        height: 25px;
-        width: 25px;
-        
-        border: 5px solid $danger;
-        border-radius: 70px;
-        -moz-animation: heartbit 1s ease-out;
-        -moz-animation-iteration-count: infinite;
-        -o-animation: heartbit 1s ease-out;
-        -o-animation-iteration-count: infinite;
-        -webkit-animation: heartbit 1s ease-out;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-    }
-    .point {
-        width: 6px;
-        height: 6px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
-        background-color: $danger;
-        position: absolute;
-        right: 6px;
-        top: -10px;
-    }
-}
-
-@-moz-keyframes heartbit {
-    0% {
-        -moz-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -moz-transform: scale(0.1);
-        opacity: 0.1;
-    }
-    50% {
-        -moz-transform: scale(0.5);
-        opacity: 0.3;
-    }
-    75% {
-        -moz-transform: scale(0.8);
-        opacity: 0.5;
-    }
-    100% {
-        -moz-transform: scale(1);
-        opacity: 0.0;
-    }
-}
-
-@-webkit-keyframes heartbit {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.1;
-    }
-    50% {
-        -webkit-transform: scale(0.5);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale(0.8);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 0.0;
-    }
-}
 .btn-block{
     display: block;
     width: 100%;
@@ -987,18 +784,6 @@ Table
         }
 }
 /*******************
-Sparkline chart tooltip
-*******************/
-.jqstooltip{
-  width: auto !important;
-  height: auto !important;
-  background: $inverse;
-  color: $white;
-  padding: 5px 15px; 
-  border: 0px;
-  border-radius: 60px;     
-}
-/*******************
 list inline
 *******************/
 .list-inline{
@@ -1012,5 +797,91 @@ list inline
             margin-right: 0px;
         }
         
+    }
+}
+
+/*******************/
+/*Chat widget*/
+/*******************/
+
+.message-box {
+    ul li {
+        .drop-title {
+            font-weight: 500;
+            padding: 11px 20px 15px;
+            border-bottom: 1px solid $border;
+        }
+        .nav-link {
+            border-top: 1px solid $border;
+            padding-top: 15px;
+        }
+    }
+    .message-widget {
+        position: relative;
+        a {
+            border-bottom: 1px solid $border;
+            display: flex;
+            text-decoration: none;
+            padding: 9px 15px;
+            &:hover {
+                background: $light;
+            }
+            &:last-child {
+                border-bottom: 0px;
+            }
+            div {
+                white-space: normal;
+            }
+            .user-img {
+                width: 45px;
+                position: relative;
+                display: inline-block;
+                margin-right: 10px;
+                img {
+                    width: 100%;
+                }
+                .profile-status {
+                    border: 2px solid $white;
+                    border-radius: 50%;
+                    display: inline-block;
+                    height: 10px;
+                    left: 33px;
+                    position: absolute;
+                    top: -1px;
+                    width: 10px;
+                }
+                .online {
+                    background: $success;
+                }
+                .busy {
+                    background: $danger;
+                }
+                .away {
+                    background: $warning;
+                }
+                .offline {
+                    background: $warning;
+                }
+            }
+            .mail-contnet {
+                display: inline-block;
+                width: 73%;
+                vertical-align: middle;
+                h5 {
+                    margin: 5px 0px 0;
+                    color: #212121;
+                }
+                .mail-desc,
+                .time {
+                    font-size: 12px;
+                    display: block;
+                    margin: 1px 0;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    color: $bodytext;
+                    white-space: nowrap;
+                }
+            }
+        }
     }
 }
