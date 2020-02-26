@@ -1,4 +1,4 @@
-## What's included in MaterialPro Angular 8 Lite
+## What's included in MaterialPro Angular 9 Lite
 MaterialPro Angular 8 Lite is a Google Material Design base template that has a clean design visuals. The design is based on Google's Material principles and the template has some handy user interface elements and page templates you need to develop your own dashboard in a easy and hassle-free manner.
 
 <h4><a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Free Version Demo Link</a></h4>
