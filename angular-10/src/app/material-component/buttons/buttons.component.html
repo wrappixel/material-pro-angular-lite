@@ -1,0 +1,114 @@
+<mat-card>
+	<mat-card-content>    
+	<mat-card-title>Buttons</mat-card-title>
+			<mat-card-subtitle>Angular Material buttons are native <code> button or a </code> elements enhanced with Material Design styling and ink ripples. <code><a href="https://material.angular.io/components/button/overview" target="_blank">Official Doc</a></code></mat-card-subtitle>
+	
+			<h4>Basic Buttons <br/><code class="bg-light">&lt;button mat-button color="primary"&gt;Primary&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-button>Basic</button>
+			<button mat-button color="primary">Primary</button>
+			<button mat-button color="accent">Accent</button>
+			<button mat-button color="warn">Warn</button>
+			<button mat-button disabled>Disabled</button>
+			<a mat-button routerLink=".">Link</a>
+		</div>
+
+		<h4>Raised Buttons <br/><code class="bg-light">&lt;button mat-raised-button color="primary"&gt;Primary&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-raised-button>Basic</button>
+			<button mat-raised-button color="primary">Primary</button>
+			<button mat-raised-button color="accent">Accent</button>
+			<button mat-raised-button color="warn">Warn</button>
+			<button mat-raised-button disabled>Disabled</button>
+			<a mat-raised-button routerLink=".">Link</a>
+		</div>
+
+		<h4>Icon Buttons <br/><code class="bg-light">&lt;button mat-icon-button color="primary"&gt; <br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;mat-icon aria-label="Example icon-button with a heart icon"&gt;favorite&lt;/mat-icon&gt;<br/>&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-icon-button>
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<button mat-icon-button color="primary">
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<button mat-icon-button color="accent">
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<button mat-icon-button color="warn">
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<button mat-icon-button disabled>
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+		</div>
+
+		<h4>Fab Buttons <br/><code class="bg-light">&lt;button mat-fab color="primary"&gt;Primary&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-fab>Basic</button>
+			<button mat-fab color="primary">Primary</button>
+			<button mat-fab color="accent">Accent</button>
+			<button mat-fab color="warn">Warn</button>
+			<button mat-fab disabled>Disabled</button>
+			<button mat-fab>
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<a mat-fab routerLink=".">Link</a>
+		</div>
+
+		<h4>Mini Fab Buttons <br/><code class="bg-light">&lt;button mat-mini-fab color="primary"&gt;Primary&lt;/button&gt;</code></h4>
+		<div class="button-row">
+			<button mat-mini-fab>Base</button>
+			<button mat-mini-fab color="primary">Pri</button>
+			<button mat-mini-fab color="accent">Acc</button>
+			<button mat-mini-fab color="warn">Warn</button>
+			<button mat-mini-fab disabled>Dis</button>
+			<button mat-mini-fab>
+				<mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+			</button>
+			<a mat-mini-fab routerLink=".">Link</a>
+		</div>
+
+		<h4>Basic button-toggles <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></h4>
+		<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+		  	<mat-button-toggle value="bold">Bold</mat-button-toggle>
+		  	<mat-button-toggle value="italic">Italic</mat-button-toggle>
+		  	<mat-button-toggle value="underline">Underline</mat-button-toggle>
+		</mat-button-toggle-group>
+
+
+		<h4>Button toggle </h4>  
+		<mat-button-toggle-group #group="matButtonToggleGroup">
+			<mat-button-toggle value="left">
+				<mat-icon>format_align_left</mat-icon>
+			</mat-button-toggle>
+			<mat-button-toggle value="center">
+				<mat-icon>format_align_center</mat-icon>
+			</mat-button-toggle>
+			<mat-button-toggle value="right">
+				<mat-icon>format_align_right</mat-icon>
+			</mat-button-toggle>
+			<mat-button-toggle value="justify" disabled>
+				<mat-icon>format_align_justify</mat-icon>
+			</mat-button-toggle>
+		</mat-button-toggle-group>
+		<div class="m-t-20">Selected value: {{group.value}}</div>  
+
+
+		<h4>Button toggle appearance <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></h4>
+		<span>Default appearance:</span>
+		<mat-button-toggle-group name="fontStyle" aria-label="Font Style" class="m-l-20">
+		    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+		    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+		    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+		</mat-button-toggle-group><br/>
+
+		<div class="m-t-20">
+			<span>Legacy appearance:</span>
+		  	<mat-button-toggle-group appearance="legacy" name="fontStyle" aria-label="Font Style" class="m-l-20">
+			    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+			    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+			    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+		  	</mat-button-toggle-group>
+		</div>
+	</mat-card-content>
+</mat-card>

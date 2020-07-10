@@ -1,0 +1,102 @@
+/*
+Template Name: Material Pro Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+
+/*============================================================== 
+ For all pages 
+ ============================================================== */
+
+
+/*******************
+ Main container
+*******************/
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+} 
+
+.mat-drawer-container{
+		background: $bodycolor;
+		
+}
+
+html .page-wrapper{
+		height:calc(100vh - 64px);
+		.page-content{
+				padding: 15px;
+		}
+}
+
+.align-items-center{
+		align-items: center;
+}
+
+/*******************
+Chartistt chart css
+******************/
+.barchrt{
+		.ct-series-a .ct-bar{
+				stroke:$success;
+		}
+		.ct-series-b .ct-bar{
+				stroke:$info;
+		}
+}
+
+.piechart{
+		.ct-series-a .ct-slice-donut{
+				stroke:$info
+		}
+		.ct-series-b .ct-slice-donut{
+				stroke:$success
+		}
+		.ct-series-c .ct-slice-donut{
+				stroke:$purple
+		}
+		.ct-series-d .ct-slice-donut{
+				stroke:$light
+		}
+		.ct-series-e .ct-slice-donut{
+				stroke:$warning
+		}
+}
+
+/*******************/
+/*social-profile-first*/
+/*******************/
+.little-profile{
+	.pro-img, .pro-img:first-child {
+		margin-top: -110px;
+		margin-bottom: 20px;
+	img {
+		width: 128px;
+		height: 128px;
+		-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+		border-radius: 100%;
+			}
+ }
+}        
+
+.button-row button{
+	margin-bottom: 5px;
+    	margin-right: 5px;
+}
+
+.pl-5 {
+	padding-left: 5px;
+}
+.pr-5 {
+	padding-right: 5px;
+}

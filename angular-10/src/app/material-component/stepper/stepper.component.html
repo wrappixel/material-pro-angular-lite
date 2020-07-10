@@ -1,0 +1,380 @@
+<!-- ============================================================== -->
+<!-- row -->
+<!-- ============================================================== -->
+<div fxLayout="row" fxLayoutWrap="wrap">
+	<!-- Card column -->
+	<div fxFlex.gt-sm="100%" fxFlex="100">
+		<mat-card>
+			<mat-card-content>
+				<mat-card-title>Stepper</mat-card-title>
+				<mat-card-subtitle>Check the <code class=""><a href="https://material.angular.io/components/stepper/overview">Official Component</a></code></mat-card-subtitle>
+				<button mat-raised-button (click)="isLinear = true" id="toggle-linear">Enable linear mode</button>
+				<mat-horizontal-stepper [linear]="isLinear">
+					<mat-step [stepControl]="firstFormGroup">
+						<form [formGroup]="firstFormGroup">
+							<ng-template matStepLabel>Fill out your name</ng-template>
+							<mat-form-field>
+								<input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+							</mat-form-field>
+							<div>
+								<button mat-raised-button color="warn" matStepperNext>Next</button>
+							</div>
+						</form>
+					</mat-step>
+					<mat-step [stepControl]="secondFormGroup">
+						<form [formGroup]="secondFormGroup">
+							<ng-template matStepLabel>Fill out your address</ng-template>
+							<mat-form-field>
+								<input matInput placeholder="Address" formControlName="secondCtrl" required>
+							</mat-form-field>
+							<div>
+								<button mat-raised-button color="accent" matStepperPrevious>Back</button>
+								<button mat-raised-button color="warn" matStepperNext>Next</button>
+							</div>
+						</form>
+					</mat-step>
+					<mat-step>
+						<ng-template matStepLabel>Done</ng-template>
+						You are now done.
+						<div>
+							<button mat-raised-button color="accent" matStepperPrevious>Back</button>
+						</div>
+					</mat-step>
+				</mat-horizontal-stepper>
+			</mat-card-content>
+		</mat-card>    
+	</div>
+</div>
+
+<!-- ============================================================== -->
+<!-- row -->
+<!-- ============================================================== -->
+<div fxLayout="row" fxLayoutWrap="wrap">
+	<!-- Card column -->
+	<div fxFlex.gt-sm="100%" fxFlex="100">
+		<mat-card>
+			<mat-card-content>
+				<mat-card-title>Stepper variants <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-subtitle>There are two stepper components: <code>mat-horizontal-stepper</code> and <code>mat-vertical-stepper</code>. They can be used the same way. The only difference is the orientation of stepper.</mat-card-subtitle>
+
+				<button mat-raised-button (click)="isLinearvarient = !isLinearvarient" id="toggle-linear">
+				  {{!isLinearvarient ? 'Enable linear mode' : 'Disable linear mode'}}
+				</button>
+				<mat-vertical-stepper [linear]="isLinearvarient" #steppervarient class="m-t-20">
+				  <mat-step [stepControl]="varientfirstFormGroup">
+				    <form [formGroup]="varientfirstFormGroup">
+				      <ng-template matStepLabel>Fill out your name</ng-template>
+				      <mat-form-field>
+				        <input matInput placeholder="Last name, First name" formControlName="varientfirstCtrl" required>
+				      </mat-form-field>
+				      <div>
+				        <button mat-raised-button matStepperNext color="accent">Next</button>
+				      </div>
+				    </form>
+				  </mat-step>
+				  <mat-step [stepControl]="varientsecondFormGroup">
+				    <form [formGroup]="varientsecondFormGroup">
+				      <ng-template matStepLabel>Fill out your address</ng-template>
+				      <mat-form-field>
+				        <input matInput placeholder="Address" formControlName="varientsecondCtrl" required>
+				      </mat-form-field>
+				      <div class="button-row">
+				        <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+				        <button mat-raised-button color="accent" matStepperNext>Next</button>
+				      </div>
+				    </form>
+				  </mat-step>
+				  <mat-step>
+				    <ng-template matStepLabel>Done</ng-template>
+				    You are now done.
+				    <div class="button-row">
+				      <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+				      <button mat-raised-button color="warn" (click)="steppervarient.reset()">Reset</button>
+				    </div>
+				  </mat-step>
+				</mat-vertical-stepper>
+			</mat-card-content>
+		</mat-card>    
+	</div>
+</div>
+
+
+<!-- ============================================================== -->
+<!-- row -->
+<!-- ============================================================== -->
+<div fxLayout="row" fxLayoutWrap="wrap">
+	<!-- Card column -->
+	<div fxFlex.gt-sm="100%" fxFlex="100">
+		<mat-card>
+			<mat-card-content>
+				<mat-card-title>Stepper Label <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-subtitle>If a step's label is only text, then the <code>label</code> attribute can be used.</mat-card-subtitle>
+				<mat-horizontal-stepper labelPosition="bottom" #stepperposition>
+				    <mat-step [stepControl]="positionfirstFormGroup">
+				        <form [formGroup]="positionfirstFormGroup">
+				            <ng-template matStepLabel>Fill out your name</ng-template>
+				            <mat-form-field>
+				                <input matInput placeholder="Last name, First name" formControlName="positionfirstCtrl" required>
+				            </mat-form-field>
+				            <div>
+				                <button mat-raised-button matStepperNext color="accent">Next</button>
+				            </div>
+				        </form>
+				    </mat-step>
+				    <mat-step [stepControl]="positionsecondFormGroup" optional>
+				        <form [formGroup]="positionsecondFormGroup">
+				            <ng-template matStepLabel>Fill out your address</ng-template>
+				            <mat-form-field>
+				                <input matInput placeholder="Address" formControlName="positionsecondCtrl" required>
+				            </mat-form-field>
+				            <div class="button-row">
+				                <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+				       	 	<button mat-raised-button color="accent" matStepperNext>Next</button>
+				            </div>
+				        </form>
+				    </mat-step>
+				    <mat-step>
+				        <ng-template matStepLabel>Done</ng-template>
+				        You are now done.
+				        <div class="button-row m-t-10">
+				            <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+				            <button mat-raised-button color="warn" (click)="stepperposition.reset()">Reset</button>
+				        </div>
+				    </mat-step>
+				</mat-horizontal-stepper>
+			</mat-card-content>
+		</mat-card>    
+	</div>
+</div>
+
+
+<!-- ============================================================== -->
+<!-- row -->
+<!-- ============================================================== -->
+<div fxLayout="row" fxLayoutWrap="wrap">
+	<!-- Card column -->
+	<div fxFlex.gt-sm="100%" fxFlex="100">
+		<mat-card>
+			<mat-card-content>
+				<mat-card-title>Stepper with optional steps <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-subtitle>If completion of a step in linear stepper is not required, then the <code>optional</code> attribute can be set on <code>mat-step</code>.</mat-card-subtitle>
+				<button mat-raised-button (click)="isOptional = !isOptional">
+				  {{!isOptional ? 'Enable optional steps' : 'Disable optional steps'}}
+				</button>
+
+				<mat-horizontal-stepper linear #stepperoptional>
+				  <mat-step [stepControl]="optionalfirstFormGroup">
+				    <form [formGroup]="optionalfirstFormGroup">
+				      <ng-template matStepLabel>Fill out your name</ng-template>
+				      <mat-form-field>
+				        <input matInput placeholder="Last name, First name" formControlName="optionalfirstCtrl" required>
+				      </mat-form-field>
+				      <div>
+				        <button mat-raised-button matStepperNext color="accent">Next</button>
+				      </div>
+				    </form>
+				  </mat-step>
+				  <mat-step [stepControl]="optionalsecondFormGroup" [optional]="isOptional">
+				    <form [formGroup]="optionalsecondFormGroup">
+				      <ng-template matStepLabel>Fill out your address</ng-template>
+				      <mat-form-field>
+				        <input matInput placeholder="Address" formControlName="optionalsecondCtrl" required>
+				      </mat-form-field>
+				      <div class="button-row">
+			                <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+			       	 	<button mat-raised-button color="accent" matStepperNext>Next</button>
+			            </div>
+				    </form>
+				  </mat-step>
+				  <mat-step>
+				    <ng-template matStepLabel>Done</ng-template>
+				    You are now done.
+				    <div class="button-row m-t-20">
+				      <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+				      <button mat-raised-button color="warn" (click)="stepperoptional.reset()">Reset</button>
+				    </div>
+				  </mat-step>
+				</mat-horizontal-stepper>
+			</mat-card-content>
+		</mat-card>    
+	</div>
+</div>
+
+<!-- ============================================================== -->
+<!-- row -->
+<!-- ============================================================== -->
+<div fxLayout="row" fxLayoutWrap="wrap">
+	<!-- Card column -->
+	<div fxFlex.gt-sm="100%" fxFlex="100">
+		<mat-card>
+			<mat-card-content>
+				<mat-card-title>Stepper with editable steps <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-subtitle>By default, steps are editable, which means users can return to previously completed steps and edit their responses. <code>editable="false"</code> can be set on <code>mat-step</code> to change the default.</mat-card-subtitle>
+				<button mat-raised-button (click)="isEditable = !isEditable">
+				  {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
+				</button>
+
+				<mat-horizontal-stepper linear #steppereditable>
+				  <mat-step [stepControl]="editablefirstFormGroup">
+				    <form [formGroup]="editablefirstFormGroup">
+				      <ng-template matStepLabel>Fill out your name</ng-template>
+				      <mat-form-field>
+				        <input matInput placeholder="Last name, First name" formControlName="editablefirstCtrl" required>
+				      </mat-form-field>
+				      <div>
+				        <button mat-raised-button matStepperNext color="accent">Next</button>
+				      </div>
+				    </form>
+				  </mat-step>
+				  <mat-step [stepControl]="editablesecondFormGroup" [editable]="isEditable">
+				    <form [formGroup]="editablesecondFormGroup">
+				      <ng-template matStepLabel>Fill out your address</ng-template>
+				      <mat-form-field>
+				        <input matInput placeholder="Address" formControlName="editablesecondCtrl" required>
+				      </mat-form-field>
+				      <div class="button-row">
+			                	<button mat-raised-button color="primary" matStepperPrevious>Back</button>
+			       	 	<button mat-raised-button color="accent" matStepperNext>Next</button>
+			            </div>
+				    </form>
+				  </mat-step>
+				  <mat-step>
+				    <ng-template matStepLabel>Done</ng-template>
+				    You are now done.
+				    <div  class="button-row m-t-20">
+				      <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+				      <button mat-raised-button color="warn" (click)="steppereditable.reset()">Reset</button>
+				    </div>
+				  </mat-step>
+				</mat-horizontal-stepper>
+			</mat-card-content>
+		</mat-card>    
+	</div>
+</div>
+
+<!-- ============================================================== -->
+<!-- row -->
+<!-- ============================================================== -->
+<div fxLayout="row" fxLayoutWrap="wrap">
+	<!-- Card column -->
+	<div fxFlex.gt-sm="100%" fxFlex="100">
+		<mat-card>
+			<mat-card-content>
+				<mat-card-title>Stepper with customized states <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-horizontal-stepper #steppercustomize>
+				  	<mat-step [stepControl]="customizefirstFormGroup">
+					    <form [formGroup]="customizefirstFormGroup">
+					      <ng-template matStepLabel>Fill out your name</ng-template>
+					      <mat-form-field>
+					        <input matInput placeholder="Last name, First name" formControlName="customizefirstCtrl" required>
+					      </mat-form-field>
+					      <div>
+					        <button mat-raised-button color="accent" matStepperNext>Next</button>
+					      </div>
+					    </form>
+					 </mat-step>
+					<mat-step [stepControl]="customizesecondFormGroup">
+					    <form [formGroup]="customizesecondFormGroup">
+					      <ng-template matStepLabel>Fill out your address</ng-template>
+					      <mat-form-field>
+					        <input matInput placeholder="Address" formControlName="customizesecondCtrl" required>
+					      </mat-form-field>
+					      <div class="button-row">
+					        <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+					        <button mat-raised-button color="accent" matStepperNext>Next</button>
+					      </div>
+					    </form>
+				  	</mat-step>
+				  	<mat-step>
+					    <ng-template matStepLabel>Done</ng-template>
+					    You are now done.
+					    <div class="button-row">
+					      <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+					      <button mat-raised-button color="warn" (click)="steppercustomize.reset()">Reset</button>
+					    </div>
+				  	</mat-step>
+				</mat-horizontal-stepper>
+
+				<mat-horizontal-stepper class="m-t-20">
+				  	<mat-step label="Step 1" state="phone">
+					    <p>Put down your phones.</p>
+					    <div>
+					      <button mat-raised-button color="accent" matStepperNext>Next</button>
+					    </div>
+				  	</mat-step>
+				  	<mat-step label="Step 2" state="chat">
+					    <p>Socialize with each other.</p>
+					    <div class="button-row">
+					      <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+					      <button mat-raised-button color="accent" matStepperNext>Next</button>
+					    </div>
+				  	</mat-step>
+				  	<mat-step label="Step 3">
+				    		<p>You're welcome.</p>
+				  	</mat-step>
+
+					<!-- Icon overrides. -->
+					<ng-template matStepperIcon="phone">
+					    <mat-icon>call_end</mat-icon>
+					</ng-template>
+					<ng-template matStepperIcon="chat">
+					    <mat-icon>forum</mat-icon>
+					</ng-template>
+				</mat-horizontal-stepper>
+			</mat-card-content>
+		</mat-card>    
+	</div>
+</div>
+
+<!-- ============================================================== -->
+<!-- row -->
+<!-- ============================================================== -->
+<div fxLayout="row" fxLayoutWrap="wrap">
+	<!-- Card column -->
+	<div fxFlex.gt-sm="100%" fxFlex="100">
+		<mat-card>
+			<mat-card-content>
+				<mat-card-title>Error State <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-subtitle>The stepper can now show error states by simply providing the <code>showError</code> option to the <code>STEPPER_GLOBAL_OPTIONS</code> in your application's root module as mentioned above.</mat-card-subtitle>
+				
+				<mat-horizontal-stepper linear #steppererror>
+					 <mat-step [stepControl]="errorfirstFormGroup" errorMessage="Name is required.">
+					    <form [formGroup]="errorfirstFormGroup">
+					      <ng-template matStepLabel>Fill out your name</ng-template>
+					      <mat-form-field>
+					        <input matInput placeholder="Last name, First name" formControlName="errorfirstCtrl" required>
+					      </mat-form-field>
+					      <div>
+					        <button mat-raised-button color="accent" matStepperNext>Next</button>
+					      </div>
+					    </form>
+					</mat-step>
+					<mat-step [stepControl]="errorsecondFormGroup" errorMessage="Address is required.">
+					    <form [formGroup]="errorsecondFormGroup">
+					      <ng-template matStepLabel>Fill out your address</ng-template>
+					      <mat-form-field>
+					        <input matInput placeholder="Address" formControlName="errorsecondCtrl" required>
+					      </mat-form-field>
+					      <div class="button-row">
+					        <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+					        <button mat-raised-button color="accent" matStepperNext>Next</button>
+					      </div>
+					    </form>
+					</mat-step>
+					<mat-step>
+					    <ng-template matStepLabel>Done</ng-template>
+					    You are now done.
+					    <div class="button-row">
+					      <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+					      <button mat-raised-button color="warn" (click)="steppererror.reset()">Reset</button>
+					    </div>
+					</mat-step>
+				</mat-horizontal-stepper>
+				
+			</mat-card-content>
+		</mat-card>    
+	</div>
+</div>
+
+
+
