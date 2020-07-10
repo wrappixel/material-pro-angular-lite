@@ -1,0 +1,62 @@
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div fxLayout="row">
+		<div fxFlex.gt-sm="100%" >
+				<mat-card>
+						<mat-card-content>
+							<mat-card-title>Basic Progress spinner</mat-card-title>
+							<mat-card-subtitle><code>&lt;mat-progress-spinner&gt;</code> are a circular indicators of progress and activity.</mat-card-subtitle>
+							<mat-spinner></mat-spinner>  
+						</mat-card-content>        
+				</mat-card>
+		</div> 
+</div>    
+<!-- ============================================================== -->
+<!-- Basic Card Grid-->
+<!-- ============================================================== -->
+<mat-card>
+		<mat-card-content>
+			<mat-card-title>Configurable progress spinner</mat-card-title>
+			
+			<section class="example-section m-t-20">
+				<label class="example-margin">Color:</label>
+				<mat-radio-group [(ngModel)]="color" class="m-l-20">
+					<mat-radio-button class="example-margin" value="primary" class="m-r-10">
+						Primary
+					</mat-radio-button>
+					<mat-radio-button class="example-margin" value="accent" class="m-r-10">
+						Accent
+					</mat-radio-button>
+					<mat-radio-button class="example-margin" value="warn">
+						Warn
+					</mat-radio-button>
+				</mat-radio-group>
+			</section>
+				<br/>
+			<section class="example-section">
+				<label class="example-margin">Mode:</label>
+				<mat-radio-group [(ngModel)]="mode" class="m-l-20">
+					<mat-radio-button class="example-margin" value="determinate" class="m-r-10">
+						Determinate
+					</mat-radio-button>
+					<mat-radio-button class="example-margin" value="indeterminate">
+						Indeterminate
+					</mat-radio-button>
+				</mat-radio-group>
+			</section>
+			<br/>
+			<section class="example-section" *ngIf="mode == 'determinate'">
+				<label class="example-margin">Progress:</label>
+				<mat-slider class="example-margin" [(ngModel)]="value"></mat-slider>
+			</section>
+			<h4 class="example-h2">Result</h4>
+
+			<mat-progress-spinner
+					class="example-margin"
+					[color]="color"
+					[mode]="mode"
+					[value]="value">
+			</mat-progress-spinner>    
+		</mat-card-content>        
+</mat-card>

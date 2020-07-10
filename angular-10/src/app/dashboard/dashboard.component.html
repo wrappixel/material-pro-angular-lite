@@ -1,0 +1,278 @@
+<!-- ============================================================== -->
+<!-- Simple four boxes Row -->
+<!-- ============================================================== -->
+<div fxLayout="row wrap">
+    <!-- column -->    
+    <div fxFlex.gt-lg="66" fxFlex.gt-md="66" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card>
+            <mat-card-content>
+                <div class="d-flex flex-wrap">
+                    <div>
+                        <mat-card-title>Sales Overview</mat-card-title>
+                         <mat-card-subtitle>Ample Admin Vs Material Admin</mat-card-subtitle> 
+                     </div>
+                    <div class="ml-auto">
+                        <ul class="list-inline">
+                            <li>
+                                <h6 class="text-success m-0"><i class="mdi mdi-checkbox-blank-circle font-10 m-r-10 "></i>Ample</h6> </li>
+                            <li>
+                                <h6 class=" text-info m-0"><i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Pixel</h6> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="barchrt" style="height:360px;">
+                    <x-chartist class="" [data]="barChart1.data" [type]="barChart1.type" [options]="barChart1.options" [responsiveOptions]="barChart1.responsiveOptions"
+                        [events]="barChart1.events"> </x-chartist>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- column -->    
+    <!-- column -->    
+    <div fxFlex.gt-lg="33" fxFlex.gt-md="33"  fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card>
+            <mat-card-content>
+                <mat-card-title>Our Visitors</mat-card-title>
+                <mat-card-subtitle>Different Devices Used to Visit</mat-card-subtitle>
+                <div class="piechart">
+                    <x-chartist class="" [data]="donuteChart1.data" [type]="donuteChart1.type" [options]="donuteChart1.options" [responsiveOptions]="donuteChart1.responsiveOptions"
+                        [events]="donuteChart1.events"> </x-chartist>
+                </div>
+            </mat-card-content>
+            <hr>
+            <mat-card-content>
+                <ul class="list-inline text-center">
+                    <li>
+                        <h6 class="text-success m-0">
+                            <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10 "></i>Mobile</h6>
+                    </li>
+                    <li>
+                        <h6 class=" text-info  m-0">
+                            <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Desktop</h6>
+                    </li>
+                    <li>
+                        <h6 class=" text-purple  m-0">
+                            <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Tablet</h6>
+                    </li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <!-- column -->    
+</div>
+
+<!-- ============================================================== -->
+<!-- Image Card row-->
+<!-- ============================================================== -->
+<div fxLayout="row wrap">
+    <!-- Card column -->
+    <div fxFlex.gt-lg="25" fxFlex.gt-md="40" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card class="oh text-center little-profile">
+            <img mat-card-image src="assets/images/background/profile-bg.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <div class="pro-img">
+                    <img src="assets/images/users/4.jpg" width="100" alt="user" class="img-circle">
+                </div>
+                <h3 class="m-b-0">Angela Dominic</h3>
+                <h6 class="m-t-0 ">Web Designer &amp; Developer</h6>
+                <mat-card-actions>
+                    <button mat-raised-button color="warn">Follow</button>
+                </mat-card-actions>
+                <div fxLayout="row" fxLayoutWrap="wrap" class="m-t-30">
+                    <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                        <h3 class="m-0 font-light">1099</h3>
+                        <small>Articles</small>
+                    </div>
+                    <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                        <h3 class="m-0 font-light">23,469</h3>
+                        <small>Followers</small>
+                    </div>
+                    <div fxFlex.gt-sm="33.33%" fxFlex.gt-xs="33.33%" fxFlex="100">
+                        <h3 class="m-0 font-light">6035</h3>
+                        <small>Likes</small>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <div class="p-20 bg-info position-relative">
+                <h4 class="card-title text-white m-0">My Contact</h4>
+                <h6 class="card-subtitle text-white m-0 op-5">Checkout my contacts here</h6>
+                <button mat-mini-fab color="accent" class="add-contact">+</button>
+            </div>
+            <div class="message-box contact-box p-20">
+                <div class="message-widget contact-widget">
+                    <!-- Message -->
+                    <a href="#">
+                        <div class="user-img"> <img src="assets/images/users/1.jpg" alt="user"
+                                class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Pavan kumar</h5> <span class="mail-desc">info@wrappixel.com</span>
+                        </div>
+                    </a>
+                    <!-- Message -->
+                    <a href="#">
+                        <div class="user-img"> <img src="assets/images/users/2.jpg" alt="user"
+                                class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Sonu Nigam</h5> <span class="mail-desc">pamela1987@gmail.com</span>
+                        </div>
+                    </a>
+                    <!-- Message -->
+                    <a href="#">
+                        <div class="user-img"> <span class="round">A</span> <span
+                                class="profile-status away pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Arijit Sinh</h5> <span class="mail-desc">cruise1298.fiplip@gmail.com</span>
+                        </div>
+                    </a>
+                    <!-- Message -->
+                    <a href="#">
+                        <div class="user-img"> <img src="assets/images/users/4.jpg" alt="user"
+                                class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Pavan kumar</h5> <span class="mail-desc">kat@gmail.com</span>
+                        </div>
+                    </a>
+                    <!-- Message -->
+                    <a href="#">
+                        <div class="user-img"> <img src="assets/images/users/5.jpg" alt="user"
+                                class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Andrew</h5> <span class="mail-desc">and@gmail.com</span>
+                        </div>
+                    </a>
+                    <!-- Message -->
+                    <a href="#">
+                        <div class="user-img"> <img src="assets/images/users/6.jpg" alt="user"
+                                class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Jonathan Jones</h5> <span class="mail-desc">jj@gmail.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+    <!-- Card column -->
+    <!-- Card column -->
+    <div fxFlex.gt-lg="75" fxFlex.gt-md="60" fxFlex.gt-xs="100" fxFlex="100">
+        <mat-card>
+            <mat-tab-group>
+                <!-- Tab 1 -->
+                <mat-tab label="Activity">
+                    <mat-card-content>
+                        <div class="d-flex no-blcok">
+                            <div class="m-r-20">
+                                <img class="img-circle" width="50" src="assets/images/users/1.jpg" alt="Image"> </div>
+                            <div class="p-b-20 b-b m-b-30">
+                                <h4 class="m-0">Nirav joshi
+                                    <small class="text-muted">(5 minute ago)</small>
+                                </h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                                <div fxLayout="row wrap">
+                                    <div fxFlex.gt-sm="20" fxFlex="100">
+                                        <img class="img-responsive rounded" src="assets/images/big/img2.jpg" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex no-blcok">
+                            <div class="m-r-20">
+                                <img class="img-circle" width="50" src="assets/images/users/2.jpg" alt="Image"> </div>
+                            <div class="p-b-20 b-b m-b-30">
+                                <h4 class="m-0">Sunil joshi
+                                    <small class="text-muted">(3 minute ago)</small>
+                                </h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                                <button mat-raised-button color="primary">Check Now</button>
+                            </div>
+                        </div>
+                        <div class="d-flex no-blcok">
+                            <div class="m-r-20">
+                                <img class="img-circle" width="50" src="assets/images/users/3.jpg" alt="Image"> </div>
+                            <div class="p-b-20 b-b m-b-30">
+                                <h4 class="m-0">Vishal Bhatt
+                                    <small class="text-muted">(1 minute ago)</small>
+                                </h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                                <div fxLayout="row wrap">
+                                    <div fxFlex.gt-sm="20" fxFlex="100">
+                                        <img class="img-responsive rounded" src="assets/images/big/img1.jpg" alt="Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex no-blcok">
+                            <div class="m-r-20">
+                                <img class="img-circle" width="50" src="assets/images/users/4.jpg" alt="Image"> </div>
+                            <div class="p-b-20 b-b m-b-30">
+                                <h4 class="m-0">Dhiren Adesara
+                                    <small class="text-muted">(1 minute ago)</small>
+                                </h4>
+                                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+                                <button mat-raised-button color="warn">Check Now</button>
+                            </div>
+                        </div>
+                    </mat-card-content>
+                </mat-tab>
+                <!-- End Tab 1 -->
+                <!-- Tab 2 -->
+                <mat-tab label="Profile">
+                    <mat-card-content>
+                        <mat-card-title>Form Basic Layouts</mat-card-title>
+                        <!-- ============================================================== -->
+                        <!-- column -->
+                        <!-- ============================================================== -->
+                        <form class="basic-form">
+                            <div fxLayout="row wrap">
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field>
+                                        <input matInput placeholder="Some text value">
+                                    </mat-form-field>
+                                </div>
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field>
+                                        <input matInput placeholder="EmailId" type="email">
+                                    </mat-form-field>
+                                </div>
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field>
+                                        <input matInput placeholder="Password" type="password">
+                                    </mat-form-field>
+                                </div>
+
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field>
+                                        <mat-select placeholder="Select">
+                                            <mat-option value="option">Option</mat-option>
+                                            <mat-option value="option">Option2</mat-option>
+                                            <mat-option value="option">Option3</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <mat-form-field>
+                                        <textarea matInput placeholder="Textarea"></textarea>
+                                    </mat-form-field>
+                                </div>
+                                <!-- column -->
+                                <div fxFlex.gt-sm="100" fxFlex="100">
+                                    <button mat-raised-button color="primary">Update Profile</button>
+                                </div>
+                            </div>
+                        </form>
+                    </mat-card-content>
+                </mat-tab>
+            </mat-tab-group>
+        </mat-card>
+    </div>
+</div>
