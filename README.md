@@ -1,10 +1,13 @@
-## What's included in MaterialPro Angular 9 Lite
+## What's included in MaterialPro Angular 9 Lite [versions 7,8,9, and 10]
+
 MaterialPro Angular 8 Lite is a Google Material Design base template that has a clean design visuals. The design is based on Google's Material principles and the template has some handy user interface elements and page templates you need to develop your own dashboard in a easy and hassle-free manner.
 
 <h4><a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Free Version Demo Link</a></h4>
 
 ## What do I get bundled with Free Version?
+
 The free version MaterialPro Angular 8 Lite provides you with a library consisting of:
+
 <ul>
 <li>SaSS Base CSS</li>
 <li>7+ Pages Template</li>
@@ -61,6 +64,7 @@ Over 2000 Font Icons - Over 2000 unique and attractive font icons.<br><br>
 Ng Bootstrap 4x - Crafted with Ng Bootstrap 4 along with fully responsive web layouts.<br><br>
 Calendar Design - Calendar functionality in attractive and interesting designs.<br><br>
 Detailed Documentation - Detailed documentation makes the template convenient and easy to use.<br>
+
 <ul>
 <li>2+ unique and attractive dashboards</li>
 <li>Open source web application</li>
@@ -81,6 +85,7 @@ Detailed Documentation - Detailed documentation makes the template convenient an
 </ul>
 
 ## The WrapPixel Advantage: Unlimited updates and dedicated support
+
 <ul>
 <li>Once you purchase a WrapPixel's template you can rest easy knowing that you'll be entitled to a free download of all our future updates for lifetime.</li>
 </li>Our dedicated support team is at your service for any queries or clarifications. Simply send us your query at https://www.wrappixel.com/support/ for quick resolution of your concerns.</li>
