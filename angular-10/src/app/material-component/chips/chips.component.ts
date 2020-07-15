@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { MatChipInputEvent } from '@angular/material';
 import { ENTER, COMMA } from '@angular/cdk/keycodes';
+
 export interface DemoColor {
   name: string;
   color: string;
 }
+
 @Component({
   selector: 'app-chips',
   templateUrl: './chips.component.html',

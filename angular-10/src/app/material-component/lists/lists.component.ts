@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ListsComponent {
   typesOfShoes = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
-  messages: any[] = [
+  messages = [
     {
       from: 'Nirav joshi (nbj@gmail.com)',
       image: 'assets/images/users/1.jpg',

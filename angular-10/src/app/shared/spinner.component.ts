@@ -1,17 +1,5 @@
-import {
-  Component,
-  Input,
-  OnDestroy,
-  Inject,
-  ViewEncapsulation
-} from '@angular/core';
-import {
-  Router,
-  NavigationStart,
-  NavigationEnd,
-  NavigationCancel,
-  NavigationError
-} from '@angular/router';
+import { Component, Input, OnDestroy, Inject, ViewEncapsulation } from '@angular/core';
+import { Router, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 import { DOCUMENT } from '@angular/common';
 
 @Component({

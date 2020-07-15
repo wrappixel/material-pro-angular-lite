@@ -4,7 +4,7 @@ import * as Chartist from 'chartist';
 import { ChartType, ChartEvent } from 'ng-chartist';
 declare var require: any;
 
-const data: any = require('./data.json');
+const data= require('./data.json');
 
 export interface Chart {
 	type: ChartType;
@@ -42,15 +42,12 @@ export class DashboardComponent implements AfterViewInit {
 		},
 
 		responsiveOptions: [
-			[
+			[ 
 				'screen and (min-width: 640px)',
 				{
 					axisX: {
-						labelInterpolationFnc: function(
-							value: number,
-							index: number
-						): string {
-							return index % 1 === 0 ? `${value}` : null;
+						labelInterpolationFnc: function(value: number,index: number): string {
+							return index % 1 === 0 ? `${value}` : '';
 						}
 					}
 				}

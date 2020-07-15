@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderComponent {
 
-  demo: number;
+  demo: number=0;
   val = 50;
   min = 0;
   max = 100;

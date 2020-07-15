@@ -19,7 +19,7 @@ export class DialogOverviewExampleDialogComponent {
   constructor(
     public dialogRef: MatDialogRef<DialogOverviewExampleDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
+  ) { }
 
   onNoClick(): void {
     this.dialogRef.close();
@@ -32,10 +32,10 @@ export class DialogOverviewExampleDialogComponent {
   styleUrls: ['./dialog.component.scss']
 })
 export class DialogComponent {
-  animal: string;
-  name: string;
+  animal: string='';
+  name: string='';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) { }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(DialogOverviewExampleDialogComponent, {

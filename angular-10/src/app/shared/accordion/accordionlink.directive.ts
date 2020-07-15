@@ -29,7 +29,7 @@ export class AccordionLinkDirective implements OnInit, OnDestroy {
     }
   }
 
-  protected _selected: boolean;
+  protected _selected: boolean=false;
   protected nav: AccordionDirective;
 
   constructor(@Inject(AccordionDirective) nav: AccordionDirective) {

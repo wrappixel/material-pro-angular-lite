@@ -12,31 +12,31 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 })
 export class StepperComponent implements OnInit {
 	isLinear = false;
-	firstFormGroup: FormGroup;
-	secondFormGroup: FormGroup;
+	firstFormGroup: FormGroup=Object.create(null);
+	secondFormGroup: FormGroup=Object.create(null);
 
 	isLinearvarient = false;
-  	varientfirstFormGroup: FormGroup;
- 	varientsecondFormGroup: FormGroup;
+  	varientfirstFormGroup: FormGroup=Object.create(null);
+ 	varientsecondFormGroup: FormGroup=Object.create(null);
 
  	isLinearposition = false;
-  	positionfirstFormGroup: FormGroup;
- 	positionsecondFormGroup: FormGroup;
+  	positionfirstFormGroup: FormGroup=Object.create(null);
+ 	positionsecondFormGroup: FormGroup=Object.create(null);
 
 
- 	optionalfirstFormGroup: FormGroup;
-	optionalsecondFormGroup: FormGroup;
+ 	optionalfirstFormGroup: FormGroup=Object.create(null);
+	optionalsecondFormGroup: FormGroup=Object.create(null);
 	isOptional = false;
 
-	editablefirstFormGroup: FormGroup;
-	editablesecondFormGroup: FormGroup;
+	editablefirstFormGroup: FormGroup=Object.create(null);
+	editablesecondFormGroup: FormGroup=Object.create(null);
 	isEditable = false;
 
-	customizefirstFormGroup: FormGroup;
-	customizesecondFormGroup: FormGroup;
+	customizefirstFormGroup: FormGroup=Object.create(null);
+	customizesecondFormGroup: FormGroup=Object.create(null);
 
-	errorfirstFormGroup: FormGroup;
-	errorsecondFormGroup: FormGroup;
+	errorfirstFormGroup: FormGroup=Object.create(null);
+	errorsecondFormGroup: FormGroup=Object.create(null);
 
 	constructor(private _formBuilder: FormBuilder) {}
 
