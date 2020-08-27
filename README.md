@@ -128,7 +128,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <p>
    Checkout our premium version of Material Pro Angular Admin for lots more features and ready to use page templates.<br>
-   <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/landingpage/">Download</a>
+   <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Download</a>
 </p>
 
 <!-- <h4><a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">View Details</a> | <a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Live Demo</a></h4> -->
