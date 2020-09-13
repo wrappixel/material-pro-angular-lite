@@ -1,8 +1,18 @@
-## What's included in MaterialPro Angular 9 Lite [versions 7,8,9, and 10]
+<!-- ## What's included in MaterialPro Angular 10 Lite [versions 7,8,9, and 10] -->
+
+<!-- Heading of Template -->
+<h1>
+  <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Material Pro Angular 10 Admin Lite</a>
+</h1>
+
+<!-- Main image of Template -->
+<a target="_blank" href="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-lite-y.jpg">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-lite-y.jpg" />
+</a>
 
 MaterialPro Angular 10 Lite is a Google Material Design base template that has a clean design visuals. The design is based on Google's Material principles and the template has some handy user interface elements and page templates you need to develop your own dashboard in a easy and hassle-free manner.
 
-<h4><a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Free Version Demo Link</a></h4>
+<!-- <h4><a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Free Version Demo Link</a></h4> -->
 
 ## What do I get bundled with Free Version?
 
@@ -44,15 +54,84 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## License
+<!-- Versions of Template -->
+<h2><a id="user-content-versions" class="anchor" aria-hidden="true" href="#versions"></a>Versions</h2>
+<table>
+<thead>
+<tr>
+<th>Bootstrap</th>
+<th>React</th>
+<th>Vue</th>
+<th>Angular</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+  <a href="https://www.wrappixel.com/templates/materialpro/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-bootstrap-admin-y.jpg" alt="MaterialPro Template  Bootstrap" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-react-admin-y.jpg" alt="MaterialPro Template  React" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/05/materialpro-vuejs-dashboard-template-20.jpg" alt="MaterialPro Template  Vue" style="max-width:150px;">
+  </a>
+</td>
+  <td>
+  <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-admin-y.jpg" alt="MaterialPro Template  Angular" style="max-width:150px;">
+  </a>
+</td>
+</tr>
+</tbody>
+</table>
 
-MaterialPro Angular 10 Lite Template is released under MIT license. MaterialPro Angular Lite is Free angular 10 template designed and developed by WrapPixel. Please feel free to download it and use it for your personal as well as commercial projects. Also do not forgot to share it with your friends and colleagues.
+<!-- Resources of Template -->
+<h2>Resources</h2>
+<ul>
+<li>  
+  Live Demo: <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard" rel="nofollow">https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard</a>
+</li>
+<li>
+    Download Page: <a href="https://www.wrappixel.com/templates/materialpro-angular-lite/" rel="nofollow">
+  https://www.wrappixel.com/templates/materialpro-angular-lite/</a>
+</li>
+<li>
+    <a href="https://www.wrappixel.com/templates/wrapkit/#demos" rel="nofollow">WrapKit </a>Complete UI Kit - For Website Projects
+</li>
+</ul>
+
+<!-- Licensing of Template -->
+<h2>Licensing</h2>
+<ul>
+  <li>
+    <p>Copyright 2020 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
+  </li>
+  <li>
+    <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
+  </li>
+</ul>
+
+
+<!-- ## License -->
+
+<!-- MaterialPro Angular 10 Lite Template is released under MIT license. MaterialPro Angular Lite is Free angular 10 template designed and developed by WrapPixel. Please feel free to download it and use it for your personal as well as commercial projects. Also do not forgot to share it with your friends and colleagues. -->
 
 ## Why should I upgrade to the pro version?
 
-<a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/"><img src="https://www.wrappixel.com/wp-content/uploads/2019/01/materialpro-angular-nw-1.jpg"/></a><br/>
+<a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/"><img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-admin-y.jpg"/></a><br/>
 
-<h4><a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">View Details</a> | <a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Live Demo</a></h4>
+<p>
+   Checkout our premium version of Material Pro Angular Admin for lots more features and ready to use page templates.<br>
+   <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Download</a>
+</p>
+
+<!-- <h4><a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">View Details</a> | <a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Live Demo</a></h4> -->
 
 The pro version of MaterialPro Angular 10 template incorporates over 250+ page templates along with four distinctive colour scheme, 25+ angular elements, six unique demos, and multiple user-interface components.
 
@@ -90,3 +169,21 @@ Detailed Documentation - Detailed documentation makes the template convenient an
 <li>Once you purchase a WrapPixel's template you can rest easy knowing that you'll be entitled to a free download of all our future updates for lifetime.</li>
 </li>Our dedicated support team is at your service for any queries or clarifications. Simply send us your query at https://www.wrappixel.com/support/ for quick resolution of your concerns.</li>
 </ul>
+
+<!-- Useful Links of Template -->
+<h2>Useful Links</h2>
+<ul>
+<li><a href="https://www.wrappixel.com/templates/category/admin-template/">Dashboard Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/">Bootstrap 4 Themes</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap Dashboard</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/react-templates/">React Themes</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vuejs Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/angular-templates/">Angular Themes</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/free-templates/">Freebies</a> from WrapPixel</li>
+</ul>
+
+<!-- Social Media of Wrappixel -->
+<h2>Social Media</h2>
+<p>Facebook: <a href="https://www.facebook.com/wrappixel">https://www.facebook.com/wrappixel</a></p>
+<p>Twitter: <a href="https://twitter.com/wrappixel">https://twitter.com/wrappixel</a></p>
+<p>Medium: <a href="https://medium.com/wrappixel">https://medium.com/wrappixel</a></p>
