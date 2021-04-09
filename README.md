@@ -2,7 +2,7 @@
 
 <!-- Heading of Template -->
 <h1>
-  <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Material Pro Angular 10 Admin Lite</a>
+  <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Material Pro Angular 11 Admin Lite</a>
 </h1>
 
 <!-- Main image of Template -->
