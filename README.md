@@ -1,4 +1,4 @@
-<!-- ## What's included in MaterialPro Angular 11 Lite [versions 7,8,9, and 10] -->
+<!-- ## What's included in MaterialPro Angular 12 Lite [versions 7,8,9, and 10,11] -->
 
 <!-- Heading of Template -->
 <h1>
