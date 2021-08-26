@@ -95,7 +95,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <h2>Resources</h2>
 <ul>
 <li>  
-  Live Demo: <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard" rel="nofollow">https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard</a>
+  Live Demo: <a href="https://demos.wrappixel.com/free-admin-templates/angular/material-angular-free/angular/dashboard" rel="nofollow">https://demos.wrappixel.com/free-admin-templates/angular/material-angular-free/angular/dashboard</a>
 </li>
 <li>
     Download Page: <a href="https://www.wrappixel.com/templates/materialpro-angular-lite/" rel="nofollow">
@@ -128,7 +128,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <p>
    Checkout our premium version of Material Pro Angular Admin for lots more features and ready to use page templates.<br>
-   <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Download</a>
+   <a href="https://demos.wrappixel.com/premium-admin-templates/angular/material-angular/material/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Download</a>
 </p>
 
 <!-- <h4><a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">View Details</a> | <a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Live Demo</a></h4> -->
