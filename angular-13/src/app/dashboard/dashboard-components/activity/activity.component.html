@@ -1,0 +1,84 @@
+<mat-card>
+    <mat-tab-group>
+        <!-- Tab 1 -->
+        <mat-tab label="Activity">
+            <mat-card-content>
+
+
+                <div class="d-flex no-blcok" *ngFor='let activity of activityData'>
+                    <div class="m-r-20">
+                        <img class="img-circle" width="50" [src]=activity.image alt="Image"> </div>
+                    <div class="p-b-20 b-b m-b-30">
+                        <h4 class="m-0">{{activity.name}}
+                            <small class="text-muted">({{activity.commentTime}})</small>
+                        </h4>
+                        <p class="text-muted">{{activity.comment}}</p>
+
+                        <div fxLayout="row wrap" *ngIf="activity.bottomImage !==''">
+                            <div fxFlex.gt-sm="20" fxFlex="100">
+                                <img class="img-responsive rounded" [src]=activity.bottomImage  alt="Image">
+                            </div>
+                        </div>
+
+                        <button  *ngIf="activity.bottomImage ===''" mat-raised-button color="{{activity.buttonColor}}">Check Now</button>
+
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-tab>
+        <!-- End Tab 1 -->
+        <!-- Tab 2 -->
+        <mat-tab label="Profile">
+            <mat-card-content>
+                <mat-card-title>Form Basic Layouts</mat-card-title>
+                <!-- ============================================================== -->
+                <!-- column -->
+                <!-- ============================================================== -->
+                <form class="basic-form">
+                    <div fxLayout="row wrap">
+                        <!-- column -->
+                        <div fxFlex.gt-sm="100" fxFlex="100">
+                            <mat-form-field>
+                                <input matInput placeholder="Some text value">
+                            </mat-form-field>
+                        </div>
+                        <!-- column -->
+                        <div fxFlex.gt-sm="100" fxFlex="100">
+                            <mat-form-field>
+                                <input matInput placeholder="EmailId" type="email">
+                            </mat-form-field>
+                        </div>
+                        <!-- column -->
+                        <div fxFlex.gt-sm="100" fxFlex="100">
+                            <mat-form-field>
+                                <input matInput placeholder="Password" type="password">
+                            </mat-form-field>
+                        </div>
+
+                        <!-- column -->
+                        <div fxFlex.gt-sm="100" fxFlex="100">
+                            <mat-form-field>
+                                <mat-select placeholder="Select">
+                                    <mat-option value="option">Option</mat-option>
+                                    <mat-option value="option">Option2</mat-option>
+                                    <mat-option value="option">Option3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+
+                        <!-- column -->
+                        <div fxFlex.gt-sm="100" fxFlex="100">
+                            <mat-form-field>
+                                <textarea matInput placeholder="Textarea"></textarea>
+                            </mat-form-field>
+                        </div>
+                        <!-- column -->
+                        <div fxFlex.gt-sm="100" fxFlex="100">
+                            <button mat-raised-button color="primary">Update Profile</button>
+                        </div>
+                    </div>
+                </form>
+            </mat-card-content>
+        </mat-tab>
+    </mat-tab-group>
+</mat-card>

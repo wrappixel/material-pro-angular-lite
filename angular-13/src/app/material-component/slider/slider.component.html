@@ -1,0 +1,53 @@
+<mat-card>
+  <mat-card-content>    
+  <mat-card-title>Slider</mat-card-title>
+  <mat-card-subtitle>mat-slider allows for the selection of a value from a range via mouse, touch, or keyboard, similar to <code class=""><a href="https://material.angular.io/components/slider/overview">Official Component</a></code></mat-card-subtitle>
+    
+    <h4 class="m-b-0">Basic Slider</h4>
+    <mat-slider color="warn" value="40"></mat-slider>
+      
+    <h4  class="m-b-0">value Slider</h4>
+    Label <mat-slider #slidey color="primary"  value="40"></mat-slider>
+    {{slidey.value}}
+
+    <h4 class="m-b-0">With Min and Max</h4>
+    <mat-form-field><input [(ngModel)]="min" matInput > </mat-form-field> <mat-form-field> <input [(ngModel)]="max" matInput></mat-form-field><br/>
+    <mat-slider [min]="min" [max]="max" tickInterval="5" #slider2 color="warn"></mat-slider>
+    {{slider2.value}}
+    
+
+    <h4 class="m-b-0">Disabled Slider</h4>
+    <mat-slider disabled #slider3></mat-slider>
+    {{slider3.value}}
+
+      <h4 class="m-b-0">Vertical slider</h4>
+    <mat-slider vertical  value="50"></mat-slider>
+      
+    <h4 class="m-b-0">Selecting a value</h4>
+    <mat-slider min="1" max="100" step="20" #slider5></mat-slider>
+    {{slider5.value}}
+
+      <h4 class="m-b-0">Slider with set tick interval</h4>
+    <mat-slider tickInterval="auto"></mat-slider>
+    <mat-slider tickInterval="9"></mat-slider>
+
+      <h4 class="m-b-0">Slider with Thumb Label</h4>
+    <mat-slider thumbLabel></mat-slider>
+
+      <h4 class="m-b-0">Slider with one-way binding</h4>
+    <mat-slider [value]="val" step="40"></mat-slider>
+      <mat-form-field><input [(ngModel)]="val" matInput></mat-form-field>
+
+      <h4 class="m-b-0">Slider with two-way binding</h4>
+    <mat-slider [(ngModel)]="demo" step="40"></mat-slider>
+      <mat-form-field><input [(ngModel)]="demo" matInput></mat-form-field>
+
+      <h4 class="m-b-0">Inverted slider</h4>
+    <mat-slider invert value="50" tickInterval="5"></mat-slider>
+
+    
+
+      <h4 class="m-b-0">Inverted vertical slider</h4>
+    <mat-slider vertical invert thumbLabel tickInterval="auto" value="50"></mat-slider>
+  </mat-card-content>
+</mat-card>
