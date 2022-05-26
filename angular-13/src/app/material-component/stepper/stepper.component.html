@@ -54,7 +54,7 @@
 	<div fxFlex.gt-sm="100%" fxFlex="100">
 		<mat-card>
 			<mat-card-content>
-				<mat-card-title>Stepper variants <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-title>Stepper variants <span class="bg-success text-white rounded font-12 p-l-5 p-r-5">New</span></mat-card-title>
 				<mat-card-subtitle>There are two stepper components: <code>mat-horizontal-stepper</code> and <code>mat-vertical-stepper</code>. They can be used the same way. The only difference is the orientation of stepper.</mat-card-subtitle>
 
 				<button mat-raised-button (click)="isLinearvarient = !isLinearvarient" id="toggle-linear">
@@ -107,7 +107,7 @@
 	<div fxFlex.gt-sm="100%" fxFlex="100">
 		<mat-card>
 			<mat-card-content>
-				<mat-card-title>Stepper Label <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-title>Stepper Label <span class="bg-success text-white rounded font-12 p-l-5 p-r-5">New</span></mat-card-title>
 				<mat-card-subtitle>If a step's label is only text, then the <code>label</code> attribute can be used.</mat-card-subtitle>
 				<mat-horizontal-stepper labelPosition="bottom" #stepperposition>
 				    <mat-step [stepControl]="positionfirstFormGroup">
@@ -156,7 +156,7 @@
 	<div fxFlex.gt-sm="100%" fxFlex="100">
 		<mat-card>
 			<mat-card-content>
-				<mat-card-title>Stepper with optional steps <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-title>Stepper with optional steps <span class="bg-success text-white rounded font-12 p-l-5 p-r-5">New</span></mat-card-title>
 				<mat-card-subtitle>If completion of a step in linear stepper is not required, then the <code>optional</code> attribute can be set on <code>mat-step</code>.</mat-card-subtitle>
 				<button mat-raised-button (click)="isOptional = !isOptional">
 				  {{!isOptional ? 'Enable optional steps' : 'Disable optional steps'}}
@@ -208,7 +208,7 @@
 	<div fxFlex.gt-sm="100%" fxFlex="100">
 		<mat-card>
 			<mat-card-content>
-				<mat-card-title>Stepper with editable steps <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-title>Stepper with editable steps <span class="bg-success text-white rounded font-12 p-l-5 p-r-5">New</span></mat-card-title>
 				<mat-card-subtitle>By default, steps are editable, which means users can return to previously completed steps and edit their responses. <code>editable="false"</code> can be set on <code>mat-step</code> to change the default.</mat-card-subtitle>
 				<button mat-raised-button (click)="isEditable = !isEditable">
 				  {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
@@ -260,7 +260,7 @@
 	<div fxFlex.gt-sm="100%" fxFlex="100">
 		<mat-card>
 			<mat-card-content>
-				<mat-card-title>Stepper with customized states <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-title>Stepper with customized states <span class="bg-success text-white rounded font-12 p-l-5 p-r-5">New</span></mat-card-title>
 				<mat-horizontal-stepper #steppercustomize>
 				  	<mat-step [stepControl]="customizefirstFormGroup">
 					    <form [formGroup]="customizefirstFormGroup">
@@ -334,7 +334,7 @@
 	<div fxFlex.gt-sm="100%" fxFlex="100">
 		<mat-card>
 			<mat-card-content>
-				<mat-card-title>Error State <span class="bg-success text-white rounded font-12 pl-5 pr-5">New</span></mat-card-title>
+				<mat-card-title>Error State <span class="bg-success text-white rounded font-12 p-l-5 p-r-5">New</span></mat-card-title>
 				<mat-card-subtitle>The stepper can now show error states by simply providing the <code>showError</code> option to the <code>STEPPER_GLOBAL_OPTIONS</code> in your application's root module as mentioned above.</mat-card-subtitle>
 				
 				<mat-horizontal-stepper linear #steppererror>

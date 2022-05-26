@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-content>
+    <mat-card-title>Our Visitors</mat-card-title>
+    <mat-card-subtitle>Different Devices Used to Visit</mat-card-subtitle>
+    <div class="piechart">
+      <apx-chart
+        [series]="VisitorChartOptions.series"
+        [chart]="VisitorChartOptions.chart"
+        [labels]="VisitorChartOptions.labels"
+        [responsive]="VisitorChartOptions.responsive"
+        [tooltip]="VisitorChartOptions.tooltip"
+        [legend]="VisitorChartOptions.legend"
+        [colors]="VisitorChartOptions.colors"
+        [dataLabels]="VisitorChartOptions.dataLabels"
+        [plotOptions]="VisitorChartOptions.plotOptions"
+        [stroke]="VisitorChartOptions.stroke"
+      >
+      </apx-chart>
+    </div>
+  </mat-card-content>
+  <hr />
+  <mat-card-content>
+    <ul class="list-inline text-center">
+      <li>
+        <h6 class="text-success m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Mobile
+        </h6>
+      </li>
+      <li>
+        <h6 class="text-info m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Desktop
+        </h6>
+      </li>
+      <li>
+        <h6 class="text-purple m-0">
+          <i class="mdi mdi-checkbox-blank-circle font-10 m-r-10"></i>Tablet
+        </h6>
+      </li>
+    </ul>
+  </mat-card-content>
+</mat-card>

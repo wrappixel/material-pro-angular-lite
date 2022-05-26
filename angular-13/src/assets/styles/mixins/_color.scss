@@ -1,0 +1,23 @@
+$color-array:(primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  info: $info,
+  purple: $purple,
+  warning: $warning,
+  danger: $danger,
+  light: $light,
+  dark: $dark,
+  muted: $muted,
+  white: $white,
+);
+
+@each $color-name,
+$color-value in $color-array {
+  .text-#{"" + $color-name} {
+    color: $color-value;
+  }
+
+  .bg-#{"" + $color-name} {
+    background-color: $color-value;
+  }
+}

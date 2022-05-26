@@ -3,8 +3,7 @@ import {Contact,contacts} from './contact-data';
 
 @Component({
   selector: 'app-contacts',
-  templateUrl: './contacts.component.html',
-  styleUrls: ['./contacts.component.css']
+  templateUrl: './contacts.component.html'
 })
 export class ContactsComponent implements OnInit {
 

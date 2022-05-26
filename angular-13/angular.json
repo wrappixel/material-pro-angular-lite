@@ -14,8 +14,7 @@
             "allowedCommonJsDependencies": [
               "rxjs-compat",
               "rxjs",
-              "hammerjs",
-              "chartist"              
+              "hammerjs"           
             ],
             "outputPath": "dist",
             "index": "src/index.html",
@@ -27,7 +26,6 @@
               "src/favicon.ico"
             ],
             "styles": [
-              "node_modules/chartist/dist/chartist.css",
               "src/styles.css",
               "src/assets/styles/style.scss"
             ],
@@ -89,7 +87,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "scripts": [
-              "node_modules/jquery/dist/jquery.min.js"
+              
             ],
             "styles": [
               "src/styles.css",

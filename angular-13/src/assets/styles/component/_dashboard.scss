@@ -1,0 +1,115 @@
+/*******************
+Rounds
+*******************/
+.round {
+  line-height: 48px;
+  color: $white;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 100%;
+  background: $info;
+  img {
+    border-radius: 100%;
+  }
+}
+
+.message-box {
+  ul li {
+    .nav-link {
+      border-top: 1px solid $border;
+      padding-top: 15px;
+    }
+  }
+  .message-widget {
+    position: relative;
+    a {
+      border-bottom: 1px solid $border;
+      display: flex;
+      text-decoration: none;
+      padding: 9px 15px;
+      &:hover {
+        background: $light;
+      }
+      &:last-child {
+        border-bottom: 0px;
+      }
+      div {
+        white-space: normal;
+      }
+      .user-img {
+        width: 45px;
+        position: relative;
+        display: inline-block;
+        margin-right: 10px;
+        img {
+          width: 100%;
+        }
+        .profile-status {
+          border: 2px solid $white;
+          border-radius: 50%;
+          display: inline-block;
+          height: 10px;
+          left: 33px;
+          position: absolute;
+          top: -1px;
+          width: 10px;
+        }
+        .online {
+          background: $success;
+        }
+        .busy {
+          background: $danger;
+        }
+        .away {
+          background: $warning;
+        }
+        .offline {
+          background: $warning;
+        }
+      }
+      .mail-contnet {
+        display: inline-block;
+        width: 73%;
+        vertical-align: middle;
+        h5 {
+          margin: 5px 0px 0;
+          color: #212121;
+        }
+        .mail-desc,
+        .time {
+          font-size: 12px;
+          display: block;
+          margin: 1px 0;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          color: $bodytext;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.add-contact {
+  position: absolute !important;
+  right: 17px;
+  top: 57px;
+}
+
+.little-profile {
+  .pro-img,
+  .pro-img:first-child {
+    margin-top: -110px;
+    margin-bottom: 20px;
+    img {
+      width: 128px;
+      height: 128px;
+      -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      border-radius: 100%;
+    }
+  }
+}
