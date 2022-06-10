@@ -1,0 +1,45 @@
+/*******************
+ Topbar
+*******************/
+mat-toolbar {
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.5);
+    &.topbar {
+      padding: 0px 15px;
+    }
+    .navbar-header {
+      text-align: center;
+      .navbar-brand {
+        display: flex;
+        line-height: 18px;
+        align-items: center;
+        .dark-logo {
+          display: none;
+        }
+        b {
+          margin-right: 5px;
+        }
+      }
+    }
+  
+    .profile-pic {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+    }
+  }
+  /*******************
+   Topbar
+  *******************/
+  .topbar {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .example-sidenav-container {
+    flex: 1;
+  }
+  
+  .example-sidenav-container {
+    flex: 1 0 auto;
+  }
+  
