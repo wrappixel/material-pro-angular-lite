@@ -1,8 +1,8 @@
-<!-- ## What's included in MaterialPro Angular 14 Lite  -->
+<!-- ## What's included in MaterialPro Angular 16 Lite  -->
 
 <!-- Heading of Template -->
 <h1>
-  <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Material Pro Angular 14 Admin Lite</a>
+  <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Material Pro Angular 16 Admin Lite</a>
 </h1>
 
 <!-- Main image of Template -->
@@ -110,7 +110,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <h2>Licensing</h2>
 <ul>
   <li>
-    <p>Copyright 2021 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
+    <p>Copyright 2023 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
   </li>
   <li>
     <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
@@ -120,7 +120,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <!-- ## License -->
 
-<!-- MaterialPro Angular 12 Lite Template is released under MIT license. MaterialPro Angular Lite is Free angular 12 template designed and developed by WrapPixel. Please feel free to download it and use it for your personal as well as commercial projects. Also do not forgot to share it with your friends and colleagues. -->
+<!-- MaterialPro Angular 16 Lite Template is released under MIT license. MaterialPro Angular Lite is Free angular 16 template designed and developed by WrapPixel. Please feel free to download it and use it for your personal as well as commercial projects. Also do not forgot to share it with your friends and colleagues. -->
 
 ## Why should I upgrade to the pro version?
 
@@ -133,14 +133,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <!-- <h4><a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">View Details</a> | <a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Live Demo</a></h4> -->
 
-The pro version of MaterialPro Angular 14 template incorporates over 250+ page templates along with four distinctive colour scheme, 25+ angular elements, six unique demos, and multiple user-interface components.
+The pro version of MaterialPro Angular 16 template incorporates over 90+ page templates along with four distinctive colour scheme, 25+ angular elements, six unique demos, and multiple user-interface components.
 
-The key features of WrapPixel's MaterialPro Angular 14 pro version include:
+The key features of WrapPixel's MaterialPro Angular 16 pro version include:
 
 4 Colour Schemes - More than four predefined colour schemes.<br><br>
 30+ Essential User Interface Elements - Dashboard admin pack more than 30 essential angular components.<br><br>
 Over 2000 Font Icons - Over 2000 unique and attractive font icons.<br><br>
-Ng Bootstrap 4x - Crafted with Ng Bootstrap 4 along with fully responsive web layouts.<br><br>
+Ng Bootstrap 5x - Crafted with Ng Bootstrap 5 along with fully responsive web layouts.<br><br>
 Calendar Design - Calendar functionality in attractive and interesting designs.<br><br>
 Detailed Documentation - Detailed documentation makes the template convenient and easy to use.<br>
 
@@ -174,7 +174,7 @@ Detailed Documentation - Detailed documentation makes the template convenient an
 <h2>Useful Links</h2>
 <ul>
 <li><a href="https://www.wrappixel.com/templates/category/admin-template/">Dashboard Templates</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/">Bootstrap 4 Themes</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/">Bootstrap 5 Themes</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap Dashboard</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/react-templates/">React Themes</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vuejs Templates</a> from WrapPixel</li>
