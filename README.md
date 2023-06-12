@@ -10,13 +10,13 @@
   <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-lite-y.jpg" />
 </a>
 
-MaterialPro Angular 14 Lite is a Google Material Design base template that has a clean design visuals. The design is based on Google's Material principles and the template has some handy user interface elements and page templates you need to develop your own dashboard in a easy and hassle-free manner.
+MaterialPro Angular 16 Lite is a Google Material Design base template that has a clean design visuals. The design is based on Google's Material principles and the template has some handy user interface elements and page templates you need to develop your own dashboard in a easy and hassle-free manner.
 
 <!-- <h4><a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Free Version Demo Link</a></h4> -->
 
 ## What do I get bundled with Free Version?
 
-The free version MaterialPro Angular 14 Lite provides you with a library consisting of:
+The free version MaterialPro Angular 16 Lite provides you with a library consisting of:
 
 <ul>
 <li>SaSS Base CSS</li>
