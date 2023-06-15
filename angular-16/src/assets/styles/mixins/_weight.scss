@@ -1,0 +1,14 @@
+$font-array:(lighter: 100,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+);
+
+@each $font-weight,
+$font-value in $font-array {
+  .fw-#{$font-weight} {
+    font-weight: $font-value;
+  }
+}

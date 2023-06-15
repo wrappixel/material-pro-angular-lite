@@ -1,0 +1,37 @@
+<!-- ============================================================== -->
+<!-- sidebar -->
+<!-- ============================================================== -->
+<div class="user-profile" style="background: url(assets/images/background/user-info.jpg) no-repeat;">
+    <!-- User profile image -->
+    <div class="profile-img"> <img src="assets/images/users/profile.png" alt="user"> </div>
+    <!-- User profile text-->
+    <!-- ============================================================== -->
+    <!-- Profile - style you can find in header.scss -->
+    <!-- ============================================================== -->
+    <div class="profile-text"><a [matMenuTriggerFor]="sdprofile" class=""> Markarn Doe <i
+                class="ti-angle-down font-12 m-l-5"></i></a></div>
+    <mat-menu #sdprofile="matMenu" class="mymegamenu">
+        <button mat-menu-item>
+            <mat-icon fontIcon="settings"></mat-icon> Settings </button>
+        <button mat-menu-item>
+            <mat-icon fontIcon="account_box"></mat-icon> Profile </button>
+        <button mat-menu-item>
+            <mat-icon fontIcon="notifications_off"></mat-icon> Disable notifications </button>
+        <button mat-menu-item>
+            <mat-icon fontIcon="exit_to_app"></mat-icon> Sign Out </button>
+    </mat-menu>
+
+</div>
+<mat-nav-list appAccordion>
+    <mat-list-item appAccordionLink *ngFor="let menuitem of menuItems.getMenuitem()" routerLinkActive="selected">
+        <a class="" appAccordionToggle [routerLink]="['/', menuitem.state]" *ngIf="menuitem.type === 'link'">
+            <mat-icon>{{ menuitem.icon }}</mat-icon>
+            <span>{{ menuitem.name }}</span>
+            <span fxFlex></span>
+
+        </a>
+
+
+    </mat-list-item>
+
+</mat-nav-list>

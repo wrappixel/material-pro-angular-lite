@@ -1,0 +1,57 @@
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div class="row">
+		<div class="col-12" >
+				<mat-card>
+						<mat-card-content>
+							<mat-card-title>Basic Tooltip</mat-card-title>
+							<mat-card-subtitle>The Angular Material tooltip provides a text label that is displayed when the user hovers over or longpresses an element. add <code>matTooltip="yourtext"</code> to any element </mat-card-subtitle>
+							<button mat-raised-button matTooltip="Info about the action"
+								aria-label="Button that displays a tooltip when focused or hovered over">
+								Action
+							</button>
+						</mat-card-content>        
+				</mat-card>
+		</div>
+</div>  
+<!-- ============================================================== -->
+<!-- Fixed height Card Grid-->
+<!-- ============================================================== -->
+<div class="row">
+	<div class="col-12" >
+		<mat-card>
+			<mat-card-content>
+				<mat-card-title>Positioning Tooltip</mat-card-title>
+				<mat-card-subtitle>Add <code>matTooltipPosition="below, above, left, right, before, after"</code> to any element</mat-card-subtitle>
+				<div class="button-row">
+					<button mat-raised-button color="accent" matTooltip="Tooltip!" matTooltipPosition="above">Above tooltip</button>
+					<button mat-raised-button color="warn" matTooltip="Tooltip!" matTooltipPosition="below">below tooltip</button>
+					<button mat-raised-button color="primary" matTooltip="Tooltip!" matTooltipPosition="left">left tooltip</button>
+					<button mat-raised-button color="warn" matTooltip="Tooltip!" matTooltipPosition="right">right tooltip</button>
+					<button mat-raised-button color="accent" matTooltip="Tooltip!" matTooltipPosition="before">Before tooltip</button>
+				</div>
+			</mat-card-content>        
+		</mat-card>
+	</div>
+</div>
+<mat-card>
+	<mat-card-content>    
+	<mat-card-title>Tooltip with custom position</mat-card-title>
+	<mat-card-subtitle>The Angular Material tooltip provides a text label that is displayed when the user hovers over or longpresses an element.</mat-card-subtitle>
+	
+		<div class="example-tooltip-host" matTooltip="Tooltip!" [matTooltipPosition]="position">
+			<span>Show tooltip</span>
+			<mat-form-field>
+				<mat-select class="example-select" [(ngModel)]="position">
+					<mat-option value="before">Before</mat-option>
+					<mat-option value="after">After</mat-option>
+					<mat-option value="above">Above</mat-option>
+					<mat-option value="below">Below</mat-option>
+					<mat-option value="left">Left</mat-option>
+					<mat-option value="right">Right</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+	</mat-card-content>
+</mat-card>

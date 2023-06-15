@@ -1,0 +1,184 @@
+/*
+Template Name: Material Pro Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+/*******************
+Main sidebar
+******************/
+
+mat-sidenav {
+    width: 240px;
+    padding-top: 0px;
+  }
+  #snav {
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    .mat-mdc-list-item {
+      margin-bottom: 10px;
+      &::before {
+        display: none;
+      }
+      &.selected > .mdc-list-item__content > a {
+        background: $themecolor-alt;
+        border-radius: $radius;
+        color: $white;
+  
+        mat-icon {
+          color: $white;
+        }
+        .dd-icon {
+          -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+        }
+      }
+      &.selected .sub-item .mdc-list-item__content a.selected {
+        background: transparent;
+        color: $inverse;
+        font-weight: 500;
+      }
+      .mdc-list-item__content {
+        display: block;
+        height: 45px;
+        &:hover {
+          background: none;
+          > a {
+            color: $themecolor;
+          }
+        }
+      }
+      a {
+        height: 45px;
+        padding: 0 10px;
+        align-items: center;
+        display: flex;
+        font-size: 15px;
+        white-space: nowrap;
+        color: $sidebar-text;
+        mat-icon:not(.dd-icon) {
+          margin-right: 8px;
+        }
+        mat-icon {
+          color: $sidebar-icons;
+        }
+        .dd-icon {
+          font-size: 16px;
+          width: 16px;
+          transition: 0.2s ease-in;
+          margin: 5px 0 5px 5px;
+          height: 16px;
+        }
+      }
+    }
+    .mat-mdc-list-item.selected .mdc-list-item__content a{
+      background: $themecolor-alt;
+      border-radius: $radius;
+      color: $white;
+
+      mat-icon {
+        color: $white;
+      }
+      .dd-icon {
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+      }
+    }
+  }
+  /*******************
+  use profile section
+  ******************/
+  
+  .user-profile {
+    position: relative;
+    background-size: cover;
+  
+    .profile-img {
+      width: 50px;
+      margin-left: 30px;
+      padding: 31px 0;
+      border-radius: 100%;
+      &::before {
+        -webkit-animation: 2.5s blow 0s linear infinite;
+        animation: 2.5s blow 0s linear infinite;
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 50px;
+        top: 31px;
+        margin: 0 auto;
+        border-radius: 50%;
+        z-index: 0;
+      }
+      @-webkit-keyframes blow {
+        0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 0.5);
+          transform: scale3d(1, 1, 0.5);
+        }
+        50% {
+          box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 0.5);
+          transform: scale3d(1, 1, 0.5);
+        }
+        100% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+          opacity: 0;
+          -webkit-transform: scale3d(1, 1, 0.5);
+          transform: scale3d(1, 1, 0.5);
+        }
+      }
+      @keyframes blow {
+        0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 0.5);
+          transform: scale3d(1, 1, 0.5);
+        }
+        50% {
+          box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+          opacity: 1;
+          -webkit-transform: scale3d(1, 1, 0.5);
+          transform: scale3d(1, 1, 0.5);
+        }
+        100% {
+          box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+          opacity: 0;
+          -webkit-transform: scale3d(1, 1, 0.5);
+          transform: scale3d(1, 1, 0.5);
+        }
+      }
+      img {
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+    .profile-text {
+      padding: 5px 0px;
+      position: relative;
+      cursor: pointer;
+      white-space: nowrap;
+      > a {
+        color: $white !important;
+        width: 100%;
+        padding: 6px 30px;
+        background: rgba(0, 0, 0, 0.5);
+        display: block;
+        white-space: nowrap;
+        &:after {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+      }
+    }
+  }
+  
+  .sidebar-closed #snav {
+    &.mat-sidenav ~ .mat-drawer-content {
+      margin-left: 0px !important;
+    }
+  }
+  

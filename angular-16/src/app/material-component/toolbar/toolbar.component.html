@@ -1,0 +1,79 @@
+<mat-card class="no-shadow">
+  <mat-card-content>
+    <mat-card-title>Toolbar</mat-card-title>
+    <mat-card-subtitle>matToolbar is a container for headers, titles, or actions.<code
+        class=""><a href="https://material.angular.io/components/toolbar/overview">Official Component</a></code></mat-card-subtitle>
+
+    <p>Basic toolbar:</p>
+    <mat-toolbar>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+    
+    <p>The primary color toolbar:</p>
+    <mat-toolbar color="primary">
+      <span>Primary Toolbar</span>
+      <span fxFlex class="ml-auto"></span>
+      <button href="#" mat-icon-button>
+        <mat-icon>search</mat-icon>
+      </button>
+      <button href="#" mat-icon-button>
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+    <p>Multiple row</p>
+    <mat-toolbar>
+      <mat-toolbar-row>
+        <span>First Row</span>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span>Second Row</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <p>Positining toolbar</p>
+    <mat-toolbar color="primary">
+      <span>Application Title</span>
+
+      <!-- This fills the remaining space of the current row -->
+      <span class="example-fill-remaining-space"></span>
+
+      <span>Right Aligned Text</span>
+    </mat-toolbar>
+    <p>An accent toolbar using the second toolbar row:</p>
+    <mat-toolbar color="accent">
+      <mat-toolbar-row>
+        <span>Second Line Toolbar</span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    <p>A primary toolbar using the third toolbar row:</p>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>Custom Toolbar</span>
+      </mat-toolbar-row>
+    
+      <mat-toolbar-row>
+        <span>Second Line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">verified_user</mat-icon>
+      </mat-toolbar-row>
+    
+      <mat-toolbar-row>
+        <span>Third Line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    
+  </mat-card-content>
+</mat-card>
