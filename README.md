@@ -149,7 +149,7 @@ MaterialPro Angular Admin Dashboard
 <tr>
 <th>Bootstrap</th>
 <th>React Js</th>
-<th>Nuxt Js</th>
+<th>Nuxt</th>
 <th>Vue Js</th>
 </tr>
 </thead>
