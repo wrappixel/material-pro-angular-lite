@@ -1,189 +1,213 @@
-<!-- ## What's included in MaterialPro Angular 16 Lite  -->
-
-<!-- Heading of Template -->
-<h1>
-  <a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Material Pro Angular 16 Admin Lite</a>
-</h1>
+# <a href="https://demos.wrappixel.com/free-admin-templates/angular/material-angular-free/angular/dashboard">MaterialPro Angular Free</a>
+MaterialPro Angular Admin Dashboard
 
 <!-- Main image of Template -->
-<a target="_blank" href="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-lite-y.jpg">
+<a target="_blank" href="https://www.wrappixel.com/templates/materialpro-angular-lite/">
   <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-lite-y.jpg" />
 </a>
 
-MaterialPro Angular 16 Lite is a Google Material Design base template that has a clean design visuals. The design is based on Google's Material principles and the template has some handy user interface elements and page templates you need to develop your own dashboard in a easy and hassle-free manner.
 
-<!-- <h4><a href="https://wrappixel.com/demos/angular-admin-templates/material-angular-lite/angular/dashboard">Free Version Demo Link</a></h4> -->
+# Compare with Premium Version 🌓
 
-## What do I get bundled with Free Version?
+<table>
+<thead>
+<tr>
+<th>MaterialPro Free Angular Admin Version</th>
+<th>MaterialPro Angular Admin Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>
+    <a href="https://demos.wrappixel.com/free-admin-templates/angular/material-angular-free/angular/dashboard">Live Preview</a>
+  </td>
+  <td>
+  <a href="https://demos.wrappixel.com/free-admin-templates/angular/material-angular-free/landingpage/index.html">Live Preview</a>
+  </td>
+</tr>
+<tr>
+  <td>
+      <a href="https://www.wrappixel.com/templates/materialpro-angular-lite/">Download Now</a>
+  </td>
+  <td>
+    <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Purchase Now</a>
+  </td>
+</tr>
+<tr>
+  <td>
+  1 Basic Dashboard
+  </td>
+  <td>
+  2+ Stunning Dashboards
+  </td>
+</tr>
+<tr>
+  <td>
+  -
+  </td>
+  <td>
+  Dashboard Figma Files
+  </td>
+</tr>
+<tr>
+  <td>
+  Angular 16 Version
+  </td>
+  <td>
+  Angular 17 Version
+  </td>
+</tr>
+<tr>
+  <td>
+  Fully Responsive Pages
+  </td>
+  <td>
+  Fully Responsive Pages
+  </td>
+</tr>
+<tr>
+  <td>
+  15+ Pages Template
+  </td>
+  <td>
+  80+ Page Templates
+  </td>
+</tr>
+<tr>
+  <td>
+  10+ UI Components
+  </td>
+  <td>
+  50+ UI Components
+  </td>
+</tr>
+<tr>
+  <td>
+  No Documentation
+  </td>
+  <td>
+  Documentation Provided
+  </td>
+</tr>
+<tr>
+  <td>
+  Easy To Customize
+  </td>
+  <td>
+  Easy To Customize
+  </td>
+</tr>
+<tr>
+  <td>
+  -
+  </td>
+  <td>
+  Right-to-Left(RTL) Verion
+  </td>
+</tr>
+<tr>
+  <td>
+  -
+  </td>
+  <td>
+  15+ Integrated Plugins
+  </td>
+</tr>
+<tr>
+  <td>
+  -
+  </td>
+  <td>
+  9+ Ready to Use App
+  </td>
+</tr>
+<tr>
+  <td>
+  -
+  </td>
+  <td>
+  1 Year Premium Support
+  </td>
+</tr>
+</tbody>
+</table>
 
-The free version MaterialPro Angular 16 Lite provides you with a library consisting of:
+# Upgrade to Premium version
 
-<ul>
-<li>SaSS Base CSS</li>
-<li>7+ Pages Template</li>
-<li>Easy To Customize elements</li>
-<li>10+ UI Components</li>
-<li>Basic Table Examples</li>
-<li>Fully Responsive Pages</li>
-<li>Multiple Widgets – Icons, Tables, and Charts</li>
-<li>Basic forms</li>
-<li>User Interface Elements – Buttons, Editor, Tabs, Accordions, Modals, Progress Bars, Tooltips, cards, notification, Timeline, Snack Bar, Grid List, Progress Spinner, Ratings, Data Picker, and many more.</li>
-</ul>
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+<a target="_blank" href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-admin-y.jpg" alt="">
+</a>
+<p>
+  Checkout our premium version of MaterialPro Angular Admin Dashboard Template for lots more features and ready to use page templates.<br>
+  <a href="https://demos.wrappixel.com/free-admin-templates/angular/material-angular-free/landingpage/index.html">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Download</a>
+</p>
 
 <!-- Versions of Template -->
-<h2><a id="user-content-versions" class="anchor" aria-hidden="true" href="#versions"></a>Versions</h2>
+# Versions
 <table>
 <thead>
 <tr>
 <th>Bootstrap</th>
-<th>React</th>
-<th>Vue</th>
-<th>Angular</th>
+<th>React Js</th>
+<th>Nuxt Js</th>
+<th>Vue Js</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-  <a href="https://www.wrappixel.com/templates/materialpro/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-bootstrap-admin-y.jpg" alt="MaterialPro Template  Bootstrap" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/materialpro/" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-bootstrap-admin-y.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
   <a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-react-admin-y.jpg" alt="MaterialPro Template  React" style="max-width:150px;">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-react-admin-y.jpg" alt="" style="max-width:150px;">
+  </a>
+</td>
+<td>
+  <a href="https://www.wrappixel.com/templates/materialpro-nuxtjs/" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/07/materialpro-nuxtjs.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
   <a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/05/materialpro-vuejs-dashboard-template-20.jpg" alt="MaterialPro Template  Vue" style="max-width:150px;">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/05/materialpro-vuejs-dashboard-template-20.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
-  <td>
-  <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-admin-y.jpg" alt="MaterialPro Template  Angular" style="max-width:150px;">
-  </a>
 </td>
+  
 </tr>
 </tbody>
 </table>
 
-<!-- Resources of Template -->
-<h2>Resources</h2>
-<ul>
-<li>  
-  Live Demo: <a href="https://demos.wrappixel.com/free-admin-templates/angular/material-angular-free/angular/dashboard" rel="nofollow">https://demos.wrappixel.com/free-admin-templates/angular/material-angular-free/angular/dashboard</a>
-</li>
-<li>
-    Download Page: <a href="https://www.wrappixel.com/templates/materialpro-angular-lite/" rel="nofollow">
-  https://www.wrappixel.com/templates/materialpro-angular-lite/</a>
-</li>
-<li>
-    <a href="https://www.wrappixel.com/templates/wrapkit/#demos" rel="nofollow">WrapKit </a>Complete UI Kit - For Website Projects
-</li>
-</ul>
-
-<!-- Licensing of Template -->
-<h2>Licensing</h2>
-<ul>
-  <li>
-    <p>Copyright 2023 Wrappixel (<a href="https://www.wrappixel.com/" rel="nofollow">https://www.wrappixel.com/</a>)</p>
-  </li>
-  <li>
-    <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
-  </li>
-</ul>
 
 
-<!-- ## License -->
 
-<!-- MaterialPro Angular 16 Lite Template is released under MIT license. MaterialPro Angular Lite is Free angular 16 template designed and developed by WrapPixel. Please feel free to download it and use it for your personal as well as commercial projects. Also do not forgot to share it with your friends and colleagues. -->
-
-## Why should I upgrade to the pro version?
-
-<a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/"><img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-admin-y.jpg"/></a><br/>
-
-<p>
-   Checkout our premium version of Material Pro Angular Admin for lots more features and ready to use page templates.<br>
-   <a href="https://demos.wrappixel.com/premium-admin-templates/angular/material-angular/material/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Download</a>
-</p>
-
-<!-- <h4><a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">View Details</a> | <a href="https://www.wrappixel.com/demos/angular-admin-templates/material-angular/material/dashboards/dashboard1">Live Demo</a></h4> -->
-
-The pro version of MaterialPro Angular 16 template incorporates over 90+ page templates along with four distinctive colour scheme, 25+ angular elements, six unique demos, and multiple user-interface components.
-
-The key features of WrapPixel's MaterialPro Angular 16 pro version include:
-
-4 Colour Schemes - More than four predefined colour schemes.<br><br>
-30+ Essential User Interface Elements - Dashboard admin pack more than 30 essential angular components.<br><br>
-Over 2000 Font Icons - Over 2000 unique and attractive font icons.<br><br>
-Ng Bootstrap 5x - Crafted with Ng Bootstrap 5 along with fully responsive web layouts.<br><br>
-Calendar Design - Calendar functionality in attractive and interesting designs.<br><br>
-Detailed Documentation - Detailed documentation makes the template convenient and easy to use.<br>
-
-<ul>
-<li>2+ unique and attractive dashboards</li>
-<li>Open source web application</li>
-<li>Six distinctive live demos</li>
-<li>5+ predefined colour skins</li>
-<li>Dark and light colour schemes</li>
-<li>Over 40 angular elements</li>
-<li>SaSS based CSS</li>
-<li>Clean, attractive, and engaging site landing pages</li>
-<li>Dashboard PSD files</li>
-<li>Multiple Widgets</li>
-<li>Mega Menu</li>
-<li>Fully responsive web pages</li>
-<li>Quick and easy customization</li>
-<li>Multiple file upload</li>
-<li>Validation forms</li>
-<li>Data tables and charts</li>
-</ul>
-
-## The WrapPixel Advantage: Unlimited updates and dedicated support
-
-<ul>
-<li>Once you purchase a WrapPixel's template you can rest easy knowing that you'll be entitled to a free download of all our future updates for lifetime.</li>
-</li>Our dedicated support team is at your service for any queries or clarifications. Simply send us your query at https://www.wrappixel.com/support/ for quick resolution of your concerns.</li>
-</ul>
 
 <!-- Useful Links of Template -->
-<h2>Useful Links</h2>
-<ul>
-<li><a href="https://www.wrappixel.com/templates/category/admin-template/">Dashboard Templates</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/">Bootstrap Themes</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap Dashboard</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/react-templates/">React Themes</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vuejs Templates</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/angular-templates/">Angular Themes</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/free-templates/">Freebies</a> from WrapPixel</li>
-</ul>
+# Useful Links
+- <p><a href="https://www.wrappixel.com/">Admin Theme</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/materialpro/">Bootstrap Themes</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/materialpro-lite/">Free Bootstrap Admin Templates</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/">React Bootstrap Template</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/">Vuejs Templates</a> from Wrappixel</p>
 
-<!-- Social Media of Wrappixel -->
-<h2>Social Media</h2>
-<p>Facebook: <a href="https://www.facebook.com/wrappixel">https://www.facebook.com/wrappixel</a></p>
-<p>Twitter: <a href="https://twitter.com/wrappixel">https://twitter.com/wrappixel</a></p>
-<p>Medium: <a href="https://medium.com/wrappixel">https://medium.com/wrappixel</a></p>
+
+<!-- Licensing of Template -->
+# Licensing
+- <p>Copyright 2024 Wrappixel <a href="https://www.wrappixel.com/">https://wrappixel.com/</a></p>
+- <p>Licensed under MIT <a href="https://www.wrappixel.com/license/">https://wrappixel.com/license/</a></p>
+
+
+<!-- Social Media of Adminmart -->
+# Social Media 👭🏼
+- <p>Facebook: <a href="https://www.facebook.com/wrappixel">https://www.facebook.com/wrappixel</a></p>
+- <p>Linkedin: <a href="https://www.linkedin.com/company/wrappixel/">https://www.linkedin.com/company/wrappixel/</a></p>
+- <p>Github: <a href="https://github.com/wrappixel">https://github.com/wrappixel</a></p>
+- <p>Twitter: <a href="https://twitter.com/wrappixel">https://twitter.com/wrappixel</a></p>
+- <p>Medium: <a href="https://medium.com/wrappixel">https://medium.com/wrappixel</a></p>
+- <p>Discord: <a href="https://discord.com/invite/eMzE8F6Wqs">https://discord.com/invite/eMzE8F6Wqs</a></p>
+- <p>Youtube: <a href="https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ">https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ</a></p>
+
+
