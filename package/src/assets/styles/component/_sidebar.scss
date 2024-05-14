@@ -16,7 +16,7 @@ mat-sidenav {
   #snav {
     box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
     .mat-mdc-list-item {
-      margin-bottom: 10px;
+      margin-bottom: 2px;
       &::before {
         display: none;
       }
@@ -53,14 +53,17 @@ mat-sidenav {
         padding: 0 10px;
         align-items: center;
         display: flex;
-        font-size: 15px;
+        font-size: 14px;
         white-space: nowrap;
         color: $sidebar-text;
         mat-icon:not(.dd-icon) {
-          margin-right: 8px;
+          margin-right: 14px;
         }
         mat-icon {
           color: $sidebar-icons;
+          width: 20px;
+          height: 20px;
+          font-size: 20px;
         }
         .dd-icon {
           font-size: 16px;

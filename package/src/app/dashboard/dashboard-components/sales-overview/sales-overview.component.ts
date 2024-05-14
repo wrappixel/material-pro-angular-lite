@@ -65,6 +65,8 @@ export class SalesOverviewComponent implements OnInit {
         bar: {
           horizontal: false,
           columnWidth: "30%",
+          borderRadius: 8,
+          endingShape: "rounded",
         },
       },
       dataLabels: {
