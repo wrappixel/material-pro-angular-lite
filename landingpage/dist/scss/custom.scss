@@ -11,6 +11,8 @@
 .live-box {
     position: relative;
     border:1px solid $gray-200;
+    height: 275px;
+    overflow: hidden;
     .overlay {
         position: absolute;
         width: 100%;

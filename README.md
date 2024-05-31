@@ -30,7 +30,7 @@ MaterialPro Angular Admin Dashboard
       <a href="https://www.wrappixel.com/templates/materialpro-angular-lite/">Download Now</a>
   </td>
   <td>
-    <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Purchase Now</a>
+    <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=33">Purchase Now</a>
   </td>
 </tr>
 <tr>
@@ -134,12 +134,12 @@ MaterialPro Angular Admin Dashboard
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-angular-admin-y.jpg" alt="">
+<a target="_blank" href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=33">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-angular-admin-wpn.jpg" alt="">
 </a>
 <p>
   Checkout our premium version of MaterialPro Angular Admin Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://materialpro-angular-main.netlify.app/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/">Download</a>
+  <a href="https://materialpro-angular-main.netlify.app/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=33">Download</a>
 </p>
 
 <!-- Versions of Template -->
@@ -147,7 +147,7 @@ MaterialPro Angular Admin Dashboard
 <table>
 <thead>
 <tr>
-<th>Bootstrap</th>
+<th>Angular</th>
 <th>React Js</th>
 <th>Nuxt</th>
 <th>Vue Js</th>
@@ -156,23 +156,23 @@ MaterialPro Angular Admin Dashboard
 <tbody>
 <tr>
 <td>
-  <a href="https://www.wrappixel.com/templates/materialpro/" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-bootstrap-admin-y.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=33" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-angular-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/materialpro-react-admin-y.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-react-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/materialpro-nuxtjs/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/07/materialpro-nuxtjs.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/materialpro-nuxtjs/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-nuxtjs-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/05/materialpro-vuejs-dashboard-template-20.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-vuetify-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 </td>
