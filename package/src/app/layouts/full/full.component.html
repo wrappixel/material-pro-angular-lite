@@ -1,75 +1,38 @@
-<!-- ============================================================== -->
-<!-- Main wrapper - style you can find in pages.scss -->
-<!-- ============================================================== -->
-<div class="main-container"> 
+<div class="blue_theme light-theme" autosize autoFocus dir="ltr">
+  <!-- ============================================================== -->
+  <!-- VerticalHeader -->
+  <!-- ============================================================== -->
+  <app-header [showToggle]="!isOver" (toggleCollapsed)="toggleCollapsed()"
+    (toggleMobileNav)="sidenav.toggle()"></app-header>
+
+  <mat-sidenav-container class="mainWrapper">
     <!-- ============================================================== -->
-    <!-- Topbar - style you can find in header.scss -->
+    <!-- Vertical Sidebar -->
     <!-- ============================================================== -->
-    <mat-toolbar color="primary" class="topbar telative">
-        <!-- ============================================================== -->
-        <!-- Logo - style you can find in header.scss -->
-        <!-- ============================================================== -->
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <!-- Logo icon --><b>
-                    <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                    <!-- Dark Logo icon -->
-                    <img src="assets/images/logo-icon.svg" alt="homepage" class="dark-logo">
-                    <!-- Light Logo icon -->
-                    <img src="assets/images/logo-light-icon.svg" alt="homepage" class="light-logo">
-                </b>
-                <!--End Logo icon -->
-                <!-- Logo text -->
-                <span class="text-logo-icon" fxShow="false" fxShow.gt-xs>
-                 <!-- dark Logo text -->
-                 <img src="assets/images/logo-text.svg" alt="homepage" class="dark-logo">
-                 <!-- Light Logo text -->    
-                 <img src="assets/images/logo-light-text.svg" class="light-logo" alt="homepage">
-                </span> </a>
-        </div>
-        <!-- ============================================================== -->
-        <!-- sidebar toggle -->
-        <!-- ============================================================== -->
-        
-        <button mat-icon-button (click)="snav.toggle()" value="sidebarclosed">
-            <mat-icon>menu</mat-icon>
-        </button>
-        <!-- ============================================================== -->
-        <!-- app header component - style you can find in header.scss / header.component.ts-->
-        <!-- ============================================================== -->
-        <app-header class="d-flex align-items-center ml-auto"></app-header>
-    </mat-toolbar>
+    <mat-sidenav #leftsidenav [mode]="isOver ? 'over' : 'side'" [opened]="!isOver"
+    (openedChange)="onSidenavOpenedChange($event)" (closedStart)="onSidenavClosedStart()" class="sidebarNav">
+      <app-sidebar> </app-sidebar>
+      <ng-scrollbar class="position-relative mini-scroll" style="height: calc(100vh - 230px)">
+        <mat-nav-list class="sidebar-list">
+          @for(item of navItems; track item) {
+          <app-nav-item [item]="item" (notify)="sidenav.toggle()">
+          </app-nav-item>
+          }
+        </mat-nav-list>
+      </ng-scrollbar>
+    </mat-sidenav>
+
     <!-- ============================================================== -->
-    <!-- End Topbar - style you can find in pages.scss -->
+    <!-- Main Content -->
     <!-- ============================================================== -->
-    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
+    <mat-sidenav-content class="contentWrapper" #content>
+
+      <main class="pageWrapper maxWidth">
         <!-- ============================================================== -->
-        <!-- Sidebar - style you can find in sidebar.scss -->
+        <!-- Outlet -->
         <!-- ============================================================== -->
-        <mat-sidenav #snav id="snav" class="dark-sidebar pl-xs" [mode]="mobileQuery.matches ? 'side' : 'over'" fixedTopGap="0" [opened]="mobileQuery.matches" [disableClose]="mobileQuery.matches"  >
-            
-                <app-sidebar></app-sidebar>
-               
-            
-        </mat-sidenav>
-        <!-- ============================================================== -->
-        <!-- Sidebar - style you can find in sidebar.scss -->
-        <!-- ============================================================== -->
-        
-        <!-- ============================================================== -->
-        <!-- Page container - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <mat-sidenav-content class="page-wrapper">
-                 
-                <div class="page-content">
-                   
-                        <router-outlet><app-spinner></app-spinner></router-outlet>
-                    
-                </div>    
-               
-        </mat-sidenav-content>
-        <!-- ============================================================== -->
-        <!-- Page container - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-    </mat-sidenav-container>
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container> 
 </div>

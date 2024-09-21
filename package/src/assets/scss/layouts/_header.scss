@@ -1,0 +1,45 @@
+html .topbar {
+  background-color: $toolbar;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: $header-height;
+  box-shadow: 1px 0 10px #00000080;
+}
+
+.topbar-dd {
+  min-width: 360px !important;
+
+  &.mat-mdc-menu-panel.mat-mdc-menu-panel {
+    overflow: unset;
+  }
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .branding {
+    width: $sidenav-desktop;
+  }
+}
+
+@media (max-width: 767px) {
+  .branding {
+    width: 40px;
+    overflow: hidden;
+  }
+}
+
+// perfect scroll
+.ps__rail-y {
+  right: 0;
+  left: unset !important;
+}
+
+
+.profile-dd {
+  margin-left: -5px !important;
+  margin-top: -5px;
+}

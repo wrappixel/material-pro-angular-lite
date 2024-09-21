@@ -1,0 +1,13 @@
+.mat-mdc-menu-item:hover:not([disabled]) {
+  background: $hoverBgColor;
+}
+
+.mat-mdc-list-item:hover::before {
+  background-color: $hoverBgColor !important;
+  opacity: 1 !important;
+  z-index: -1;
+}
+
+mdc-list-item__content {
+  z-index: 2;
+}

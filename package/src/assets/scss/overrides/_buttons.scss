@@ -1,0 +1,44 @@
+.mat-mdc-raised-button.mat-primary,
+.mat-mdc-raised-button.mat-accent,
+.mat-mdc-raised-button.mat-warn,
+.mat-mdc-unelevated-button.mat-primary,
+.mat-mdc-unelevated-button.mat-accent,
+.mat-mdc-unelevated-button.mat-warn,
+.mdc-fab.mat-primary,
+.mdc-fab.mat-accent,
+.mdc-fab.mat-warn {
+  color: white;
+}
+
+.mdc-button {
+  border-radius: $border-radius;
+}
+
+.mat-mdc-raised-button {
+  box-shadow: $cardshadow;
+}
+
+.mat-mdc-fab,
+.mat-mdc-mini-fab,
+.mat-mdc-fab:hover,
+.mat-mdc-fab:focus,
+.mat-mdc-mini-fab:hover,
+.mat-mdc-mini-fab:focus {
+  box-shadow: none;
+}
+
+.mat-button-toggle-button {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .flex-sm-row {
+    flex-direction: row !important;
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+

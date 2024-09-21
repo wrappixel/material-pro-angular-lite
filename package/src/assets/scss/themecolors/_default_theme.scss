@@ -1,0 +1,111 @@
+$mat-primary: (
+  100: white,
+  500: #1e88e5,
+  700: #1e88e5,
+  contrast: (
+    100: white,
+    500: white,
+    700: white,
+  ),
+);
+$mat-secondary: (
+  100: white,
+  500: #26c6da,
+  700: #26c6da,
+  contrast: (
+    100: white,
+    500: white,
+    700: white,
+  ),
+);
+
+$mat-warn: (
+  100: FDEDE8,
+  500: #e91e63,
+  700: #e91e63,
+  contrast: (
+    100: white,
+    500: white,
+    700: white,
+  ),
+);
+
+$theme-primary: mat.m2-define-palette($mat-primary, 500);
+$theme-accent: mat.m2-define-palette($mat-secondary, 500);
+$theme-warn: mat.m2-define-palette($mat-warn, 500);
+
+$bluetheme: mat.m2-define-light-theme(
+  (
+    color: (
+      primary: $theme-primary,
+      accent: $theme-accent,
+      warn: $theme-warn,
+    ),
+    typography:
+      mat.m2-define-typography-config(
+        $font-family: "Poppins",
+        $subtitle-2: mat.m2-define-typography-level(14px, 14px, 400),
+        $subtitle-1: mat.m2-define-typography-level(21px, 26px, 500),
+         $headline-6: mat.m2-define-typography-level(18px, 26px, 500),
+        $headline-5: mat.m2-define-typography-level(24px, 30px, 700),
+        $button: mat.m2-define-typography-level(14px, 14px, 400),
+        $body-1: mat.m2-define-typography-level(14px, 20px, 400),
+        $body-2: mat.m2-define-typography-level(16px, 22px, 400),
+      ),
+  )
+);
+
+$darkbluetheme: mat.m2-define-dark-theme(
+  (
+    color: (
+      primary: $theme-primary,
+      accent: $theme-accent,
+      warn: $theme-warn,
+    ),
+    typography:
+      mat.m2-define-typography-config(
+        $font-family: "Poppins",
+        $subtitle-2: mat.m2-define-typography-level(14px, 14px, 400),
+        $subtitle-1: mat.m2-define-typography-level(21px, 26px, 500),
+         $headline-6: mat.m2-define-typography-level(18px, 26px, 500),
+        $headline-5: mat.m2-define-typography-level(24px, 30px, 700),
+        $button: mat.m2-define-typography-level(14px, 14px, 400),
+        $body-1: mat.m2-define-typography-level(14px, 20px, 400),
+        $body-2: mat.m2-define-typography-level(16px, 22px, 400),
+      ),
+  )
+);
+
+.bg-primary,
+.topbar {
+  background: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+}
+
+.topbar .mat-mdc-icon-button,
+.topbar .mat-mdc-button {
+  color: $white !important;
+}
+
+.horizontal-navbar .parentBox.pactive > a,
+.horizontal-navbar .parentBox.pactive > a:hover,
+.horizontal-navbar .parentBox.pactive:hover > a {
+  background-color: mat.m2-get-color-from-palette($theme-accent, 500) !important;
+}
+
+.activeMenu {
+  background-color: mat.m2-get-color-from-palette($theme-accent, 500) !important;
+}
+
+
+// outline button border
+.mat-mdc-outlined-button {
+  &.mat-primary{
+    border-color: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+  }
+  &.mat-accent{
+    border-color: mat.m2-get-color-from-palette($theme-accent, 500) !important;
+  }
+  &.mat-warn{
+    border-color: mat.m2-get-color-from-palette($theme-warn, 500) !important;
+  }
+}

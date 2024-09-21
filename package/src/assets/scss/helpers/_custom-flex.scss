@@ -1,0 +1,40 @@
+@media (min-width: 1200px) {
+  body {
+    .d-lg-flex {
+      display: flex !important;
+    }
+
+    .d-lg-none {
+      display: none !important;
+    }
+    .align-items-lg-center {
+      align-items: center !important;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    .d-sm-flex {
+      display: flex !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .p-xs-6 {
+    padding: 0 6px !important;
+  }
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-1-auto {
+  flex: 1 1 0%;
+}
+
+.list-style-none {
+  list-style: none;
+}

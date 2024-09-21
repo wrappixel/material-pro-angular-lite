@@ -1,33 +1,27 @@
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
-import { MediaMatcher } from '@angular/cdk/layout';
-import { MenuItems } from '../../../shared/menu-items/menu-items';
-import { DemoMaterialModule } from 'src/app/demo-material-module';
-import { CommonModule, NgFor, NgIf } from '@angular/common';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  ViewChild,
+} from '@angular/core';
+import { BrandingComponent } from './branding.component';
+import { TablerIconsModule } from 'angular-tabler-icons';
+import { MaterialModule } from 'src/app/material.module';
 import { RouterModule } from '@angular/router';
-import { MatIconModule } from '@angular/material/icon';
+
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports:[DemoMaterialModule, NgFor, NgIf, RouterModule, CommonModule, MatIconModule],
+  imports: [BrandingComponent, TablerIconsModule, MaterialModule, RouterModule],
   templateUrl: './sidebar.component.html',
-  styleUrls: []
 })
-export class AppSidebarComponent implements OnDestroy {
-  mobileQuery: MediaQueryList;
+export class SidebarComponent implements OnInit {
+  constructor() { }
+  @Input() showToggle = true;
+  @Output() toggleMobileNav = new EventEmitter<void>();
+  @Output() toggleCollapsed = new EventEmitter<void>();
 
-  private _mobileQueryListener: () => void;
-
-  constructor(
-    changeDetectorRef: ChangeDetectorRef,
-    media: MediaMatcher,
-    public menuItems: MenuItems
-  ) {
-    this.mobileQuery = media.matchMedia('(min-width: 768px)');
-    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
-    this.mobileQuery.addListener(this._mobileQueryListener);
-  }
-
-  ngOnDestroy(): void {
-    this.mobileQuery.removeListener(this._mobileQueryListener);
-  }
+  ngOnInit(): void { }
 }

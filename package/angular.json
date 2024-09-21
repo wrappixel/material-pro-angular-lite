@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "material-pro-angular-lite": {
+    "Materialpro": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,24 +17,17 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "apexcharts"
-            ],
-            "outputPath": "dist/material-pro-angular-lite",
+            "allowedCommonJsDependencies": ["apexcharts", "bezier-easing", "moment"],
+            "outputPath": "dist/Materialpro",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/assets/styles/style.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/scss/style.scss"
             ],
             "scripts": []
           },
@@ -43,13 +36,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500mb",
-                  "maximumError": "500mb"
+                  "maximumWarning": "12mb",
+                  "maximumError": "12mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "500mb",
-                  "maximumError": "500mb"
+                  "maximumWarning": "12mb",
+                  "maximumError": "12mb"
                 }
               ],
               "outputHashing": "all"
@@ -69,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "material-pro-angular-lite:build:production"
+              "buildTarget": "Materialpro:build:production"
             },
             "development": {
-              "browserTarget": "material-pro-angular-lite:build:development"
+              "buildTarget": "Materialpro:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,25 +73,17 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "material-pro-angular-lite:build"
+            "buildTarget": "Materialpro:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }

@@ -1,17 +1,42 @@
-        
-<!-- ============================================================== -->
-<!-- Profile - style you can find in header.scss -->
-<!-- ============================================================== -->
-<a href="https://wrappixel.com/templates/materialpro-angular-dashboard/" class=" m-r-20 hidden-sm-up" mat-raised-button color="warn">Upgrade To Pro</a>
-<button [matMenuTriggerFor]="profile" mat-icon-button class="m-r-5 p-0 d-flex jc-c align-items-center"> <img src="assets/images/users/1.jpg" alt="user" class="profile-pic"> </button>
-<mat-menu #profile="matMenu" class="mymegamenu">
-    <button mat-menu-item>
-        <mat-icon>settings</mat-icon> Settings </button>
-    <button mat-menu-item>
-        <mat-icon>account_box</mat-icon> Profile </button>
-    <button mat-menu-item>
-        <mat-icon>notifications_off</mat-icon> Disable notifications </button>
-    <button mat-menu-item>
-        <mat-icon>exit_to_app</mat-icon> Sign Out </button>
-</mat-menu>
+<mat-toolbar class="topbar">
+  <app-branding></app-branding>
 
+  <!-- --------------------------------------------------------------- -->
+  <!-- Desktop Menu -->
+  
+  <!-- <button mat-icon-button (click)="toggleCollapsed.emit()" class="d-flex justify-content-center">
+    <i-tabler name="menu-2" class="icon-20 d-flex"></i-tabler>
+  </button> -->
+  
+
+  <!-- Mobile Menu -->
+  
+  <button mat-icon-button (click)="toggleMobileNav.emit()" class="d-flex justify-content-center">
+    <i-tabler name="menu-2" class="icon-20 d-flex"></i-tabler>
+  </button>
+  
+
+  <!-- --------------------------------------------------------------- -->
+
+  <span class="flex-1-auto"></span>
+
+  <a href="https://wrappixel.com/templates/materialpro-angular-dashboard/" target="_blank" class=" m-r-20 hidden-sm-up"
+    mat-raised-button color="warn">Upgrade To Pro</a>
+
+  <!-- --------------------------------------------------------------- -->
+  <!-- profile Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+  <button mat-icon-button [matMenuTriggerFor]="profilemenu" aria-label="Notifications">
+    <img src="/assets/images/profile/profile.png" class="rounded-circle object-cover icon-35 profile-dd" width="35" />
+  </button>
+  <mat-menu #profilemenu="matMenu" class="cardWithShadow">
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon> Settings </button>
+    <button mat-menu-item>
+      <mat-icon>account_box</mat-icon> Profile </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon> Disable notifications </button>
+    <button mat-menu-item>
+      <mat-icon>exit_to_app</mat-icon> Sign Out </button>
+  </mat-menu>
+</mat-toolbar>

@@ -1,0 +1,40 @@
+@use "sass:meta";
+
+@mixin syntax-colors($args...) {
+  @each $name, $color in meta.keywords($args) {
+    .bg-#{$name} {
+      background-color: $color !important;
+    }
+
+    .text-#{$name} {
+      color: $color !important;
+    }
+  }
+}
+
+@include syntax-colors(
+  $primary: $primary,
+  $accent: $accent,
+  $success: $success,
+  $warning: $warning,
+  $purple: #7460ee,
+  $error: $error,
+  $white: $white,
+  $light: $light,
+  $gray-100: $gray-100,
+  $light-error: $light-error,
+  $light-accent: $light-accent,
+  $light-success: $light-success,
+  $light-warning: $light-warning,
+  $light-primary: $light-primary
+);
+
+.fill-warning svg {
+  fill: $warning;
+  color: $warning;
+}
+
+.fill-light svg {
+  fill: $light;
+  color: $light;
+}

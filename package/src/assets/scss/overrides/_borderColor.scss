@@ -1,0 +1,13 @@
+// theme
+.mat-drawer-side {
+  border-right: 1px solid $borderColor;
+  box-shadow: 1px 0 20px #00000014;
+}
+
+.mat-divider {
+  border-top-color: $borderColor;
+}
+
+.mat-mdc-progress-bar {
+  border-radius: $border-radius; 
+}
