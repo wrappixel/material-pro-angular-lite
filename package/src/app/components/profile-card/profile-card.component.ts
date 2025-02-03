@@ -4,7 +4,6 @@ import { MaterialModule } from 'src/app/material.module';
 
 @Component({
   selector: 'app-profile-card',
-  standalone: true,
   imports: [MaterialModule, TablerIconsModule],
   templateUrl: './profile-card.component.html',
 })

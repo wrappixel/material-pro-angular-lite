@@ -1,0 +1,114 @@
+<div class="app-topstrip bg-dark text-white p-y-10 p-x-20 w-100 d-lg-flex align-items-center justify-content-between">
+    <h2 class="f-s-18 m-y-8 text-lg-left text-center">MaterialPro Version is Available!</h2>
+
+    <div class="d-flex align-items-center justify-content-center flex-wrap">
+
+        <!-- Support -->
+        <a mat-button class="text-white d-none d-lg-flex" href="https://support.wrappixel.com/" target="_blank">
+            <div class="d-flex align-items-center gap-4">
+                <i-tabler name="lifebuoy" class="icon-20 d-flex"></i-tabler>
+                Support
+            </div>
+        </a>
+
+        <!-- Templates -->
+        <a mat-button class="text-white d-none d-lg-flex" href="https://www.wrappixel.com/" target="_blank">
+            <div class="d-flex align-items-center gap-4">
+                <i-tabler name="gift" class="icon-20 d-flex"></i-tabler>
+                Templates
+            </div>
+        </a>
+
+        <!-- Hire Us -->
+        <a mat-button class="text-white d-none d-lg-flex" href="https://www.wrappixel.com/hire-us/" target="_blank">
+            <div class="d-flex align-items-center gap-4">
+                <i-tabler name="briefcase" class="icon-20 d-flex"></i-tabler>
+                Hire Us
+            </div>
+        </a>
+
+        <!-- Live Preview -->
+        <button class="d-flex align-items-center gap-4 text-white b-1 border-primary m-x-10" mat-button
+            [matMenuTriggerFor]="beforeMenu">
+            <div class="d-flex align-items-center gap-6">
+                <i-tabler name="device-laptop" class="icon-20 d-flex"></i-tabler>
+                Live Preview
+                <i-tabler name="chevron-down" class="icon-20 d-flex"></i-tabler>
+            </div>
+        </button>
+        <mat-menu #beforeMenu="matMenu" xPosition="before">
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=353"
+                target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    Angular Preview
+                </div>
+            </a>
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    VueJs Preview
+                </div>
+            </a>
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    NextJs Preview
+                </div>
+            </a>
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    React Preview
+                </div>
+            </a>
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    Bootstrap Preview
+                </div>
+            </a>
+        </mat-menu>
+
+        <!-- Buy Now -->
+        <button class="d-flex align-items-center gap-4 text-white" mat-flat-button [matMenuTriggerFor]="beforeMenutow">
+            <div class="d-flex align-items-center gap-6">
+                <i-tabler name="shopping-cart" class="icon-20 d-flex"></i-tabler>
+                Buy Now
+            </div>
+        </button>
+        <mat-menu #beforeMenutow="matMenu" xPosition="before">
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    Angular Preview
+                </div>
+            </a>
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    VueJs Preview
+                </div>
+            </a>
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro-nextjs-admin-dashboard-app-directory/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    NextJs Preview
+                </div>
+            </a>
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro-react-admin/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    React Preview
+                </div>
+            </a>
+            <a mat-menu-item href="https://www.wrappixel.com/templates/materialpro/?ref=353" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="external-link" class="icon-18 d-flex"></i-tabler>
+                    Bootstrap Preview
+                </div>
+            </a>
+        </mat-menu>
+
+    </div>
+</div>

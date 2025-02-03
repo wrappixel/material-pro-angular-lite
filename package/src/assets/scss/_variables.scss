@@ -4,61 +4,40 @@
 $font-family: 'Poppins', sans-serif;
 
 // light color variable
-$sidebarbg: white;
-$background: #eef5f9;
-$cardbg: white;
-$toolbar: white;
-$cardshadow: 0px 5px 20px rgba(0,0,0,.05);
-$hoverBgColor: #f6f9fc;
-
-// Dark color variable
-$darksidebarbg: #2a3447;
-$darkbackground: #2a3447;
-$darkcardbg: #2a3447;
-$darktoolbar: #2a3447;
-$darkcardshadow: rgba(145, 158, 171, 0.3) 0px 0px 2px 0px, rgba(145, 158, 171, 0.02) 0px 12px 24px -4px;
-$darkborderColor: #333f55;
-$darkformborderColor: #465670;
-$darkhoverbgcolor: #333f55;
-$darkthemelightprimary: #253662;
-$darkthemelightaccent: #1C455D;
-$darkthemelightwarning: #4D3A2A;
-$darkthemelighterror: #4B313D;
-$darkthemelightsuccess: #1B3C48;
 
 // Sidenav
-$sidenav-desktop: 270px !default;
-$sidenav-mini: 80px !default;
-$header-height: 70px !default;
-
+$sidenav-desktop: 260px !default;
+$sidenav-mini: 72px !default;
+$header-height: 60px !default;
 
 //BorderColor
-$borderColor: #e5eaef;
-$borderformColor: #dfe5ef;
+$borderColor: var(--mat-sys-outline-variant);
+$borderformColor: var(--mat-sys-outline-variant);
 
 // custom
-$primary: #1e88e5;
-$accent: #26c6da;
-$warning: #ffb22b;
-$error: #fc4b6c;
-$success: #26c6da;
+$primary: var(--mat-sys-primary);
+$secondary: var(--mat-sys-secondary);
+$accent: var(--mat-sys-secondary);
+$error: var(--mat-sys-error);
+$warning: #f6c000;
+$success: #2cd07e;
 $white: #ffffff;
 
-$light: #f2f6fa;
-
-$gray-100:  #7c8fac;
-$gray-50: #e2e2e2;
-
-$light-primary: #ecf6ff;
-$light-accent: #e8f7ff;
-$light-warning: #fff8ec;
-$light-error: #f9e7eb;
-$light-success: #e8fdf8;
+$light: var(--mat-sys-surface-bright);
+$light-primary: var(--mat-sys-primary-fixed-dim);
+$light-secondary: var(--mat-sys-secondary-fixed-dim);
+$light-accent: var(--mat-sys-secondary-fixed-dim);
+$light-error: var(--mat-sys-error-fixed-dim);
+$light-warning: rgba(246, 192, 0, 0.15);
+$light-success: rgba(44, 208, 126, 0.15);
+$dark: #3A4752;
 
 // layout
-$boxedWidth: 1200px;
+$boxedWidth: 1300px;
+$border-radius: 10px;
 
-$border-radius: 7px;
+$card-spacer: 30px;
 
-// text color
-$textPrimary: #2a3547;
+$text-color: var(--mat-sys-on-background);
+
+$dark-text-secondary: rgba(255, 255, 255, 0.67);

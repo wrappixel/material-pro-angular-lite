@@ -35,7 +35,6 @@ export interface salesChart {
 
 @Component({
   selector: 'app-sales-overview',
-  standalone: true,
   imports: [NgApexchartsModule, TablerIconsModule, MaterialModule],
   templateUrl: './sales-overview.component.html',
 })
@@ -46,60 +45,96 @@ export class AppSalesOverviewComponent {
 
   constructor() {
     this.salesChart = {
+
       series: [
-        { name: 'Ample', data: [355, 390, 300, 350, 390, 180, 250] },
-        { name: 'Pixel', data: [280, 250, 325, 215, 250, 310, 170] },
+        {
+          name: "Pixel",
+          data: [9, 5, 3, 7, 5, 10, 3],
+          color: 'var(--mat-sys-primary)',
+        },
+        {
+          name: "Ample",
+          data: [6, 3, 9, 5, 4, 6, 4],
+          color: 'var(--mat-sys-secondary)',
+        },
       ],
       chart: {
-        type: 'bar',
-        height: 320,
-        toolbar: { show: false },
-        foreColor: '#adb0bb',
-        fontFamily: 'Poppins',
-        sparkline: { enabled: false },
+        fontFamily: "inherit",
+        type: "bar",
+        height: 330,
+        foreColor: "#adb0bb",
+        offsetY: 10,
+        offsetX: -15,
+        toolbar: {
+          show: false,
+        },
+  
       },
       grid: {
-        show: false,
+        show: true,
+        strokeDashArray: 3,
+        borderColor: "rgba(0,0,0,.1)",
       },
       plotOptions: {
-        bar: { horizontal: false, columnWidth: '35%', borderRadius: 0 },
+        bar: {
+          horizontal: false,
+          columnWidth: "30%",
+          endingShape: "flat",
+          borderRadius: 4,
+        },
       },
       dataLabels: {
         enabled: false,
       },
-      xaxis: {
-        type: 'category',
-        categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-        axisBorder: {
-          show: false,
-        },
-        axisTicks: {
-          show: false,
-        },
-      },
-      yaxis: {
-        show: true,
-        min: 100,
-        max: 400,
-        tickAmount: 3,
-      },
       stroke: {
         show: true,
         width: 5,
-        lineCap: 'butt',
-        colors: ['transparent'],
+        colors: ["transparent"],
       },
-
+      xaxis: {
+        type: "category",
+        categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        axisTicks: {
+          show: false,
+        },
+        axisBorder: {
+          show: false,
+        },
+        labels: {
+          style: {
+            colors: "#a1aab2",
+          },
+        },
+      },
+      yaxis: {
+        labels: {
+          style: {
+            colors: "#a1aab2",
+          },
+        },
+      },
+      fill: {
+        opacity: 1,
+        colors: ["#1B84FF", "#43CED7"],
+      },
+      tooltip: {
+        theme: "dark",
+      },
       legend: {
         show: false,
       },
-      fill: {
-        colors: ['#26c6da', '#1e88e5'],
-        opacity: 1,
-      },
-      tooltip: {
-        theme: 'dark',
-      },
+      responsive: [
+        {
+          breakpoint: 767,
+          options: {
+            stroke: {
+              show: false,
+              width: 5,
+              colors: ["transparent"],
+            },
+          },
+        },
+      ],
     };
   }
 }

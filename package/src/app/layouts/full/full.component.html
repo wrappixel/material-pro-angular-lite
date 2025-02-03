@@ -1,25 +1,28 @@
+<app-topstrip></app-topstrip>
 <div class="blue_theme light-theme" autosize autoFocus dir="ltr">
   <!-- ============================================================== -->
   <!-- VerticalHeader -->
   <!-- ============================================================== -->
-  <app-header [showToggle]="!isOver" (toggleCollapsed)="toggleCollapsed()"
-    (toggleMobileNav)="sidenav.toggle()"></app-header>
+
+  <app-header [showToggle]="!isOver" (toggleMobileNav)="sidenav.toggle()"></app-header>
 
   <mat-sidenav-container class="mainWrapper">
     <!-- ============================================================== -->
     <!-- Vertical Sidebar -->
     <!-- ============================================================== -->
     <mat-sidenav #leftsidenav [mode]="isOver ? 'over' : 'side'" [opened]="!isOver"
-    (openedChange)="onSidenavOpenedChange($event)" (closedStart)="onSidenavClosedStart()" class="sidebarNav">
-      <app-sidebar> </app-sidebar>
-      <ng-scrollbar class="position-relative mini-scroll" style="height: calc(100vh - 230px)">
-        <mat-nav-list class="sidebar-list">
-          @for(item of navItems; track item) {
-          <app-nav-item [item]="item" (notify)="sidenav.toggle()">
-          </app-nav-item>
-          }
-        </mat-nav-list>
-      </ng-scrollbar>
+      (openedChange)="onSidenavOpenedChange($event)" (closedStart)="onSidenavClosedStart()" class="sidebarNav">
+      <div class="flex-layout">
+        <app-sidebar (toggleMobileNav)="sidenav.toggle()" [showToggle]="isOver"></app-sidebar>
+        <ng-scrollbar class="position-relative" style="height: 100%">
+          <mat-nav-list class="sidebar-list">
+            @for(item of navItems; track item) {
+            <app-nav-item [item]="item" (notify)="sidenav.toggle()">
+            </app-nav-item>
+            }
+          </mat-nav-list>
+        </ng-scrollbar>
+      </div>
     </mat-sidenav>
 
     <!-- ============================================================== -->
@@ -33,6 +36,13 @@
         <!-- ============================================================== -->
         <router-outlet></router-outlet>
       </main>
+
+      <div class="p-16 p-t-8 p-b-30 text-center">
+        Design & Developed by <a class="text-decoration-none" href="https://www.wrappixel.com/"
+          target="_blank">WrapPixel.com</a>
+      </div>
+
     </mat-sidenav-content>
-  </mat-sidenav-container> 
+
+  </mat-sidenav-container>
 </div>

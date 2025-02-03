@@ -25,10 +25,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "src/styles.scss",
-              "src/assets/scss/style.scss"
-            ],
+            "styles": ["src/styles.scss", "src/assets/scss/style.scss"],
             "scripts": []
           },
           "configurations": {
@@ -63,6 +60,9 @@
           "configurations": {
             "production": {
               "buildTarget": "Materialpro:build:production"
+            },
+            "hmr": {
+              "hmr": true
             },
             "development": {
               "buildTarget": "Materialpro:build:development"

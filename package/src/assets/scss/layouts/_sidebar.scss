@@ -1,16 +1,24 @@
+@use "../variables" as *;
+
 .mat-drawer.sidebarNav {
+  position: absolute;
+  overflow-x: hidden;
   width: $sidenav-desktop;
   flex-shrink: 0;
-  transition: swift-ease-out(width);
-  position: fixed !important;
-  top: $header-height !important;
-  overflow-x: hidden;
+  transition: width .4s cubic-bezier(.25, .8, .25, 1);
+  border-right: 0;
+  border-radius: 0px !important;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .03), 0 0 1px 0 rgba(0, 0, 0, .1);
+  background-color: var(--mdc-elevated-card-container-color);
+
   .mat-drawer-inner-container {
     overflow: hidden;
   }
+
+  .ng-scroll-content {
+    display: block;
+  }
 }
-
-
 
 // user profile
 .user-profile {
@@ -20,7 +28,7 @@
   .profile-img {
     width: 50px;
     margin-left: 30px;
-    padding: 31px 0;
+    padding: 32px 0;
     border-radius: 100%;
 
     &::before {
@@ -45,10 +53,12 @@
   .profile-text {
     position: relative;
     cursor: pointer;
-    > a {
-      padding: 6px 30px;
+
+    >a {
+      padding: 6px 20px;
       background: rgba(0, 0, 0, 0.5);
       white-space: nowrap;
+
       &:after {
         position: absolute;
         right: 20px;
@@ -62,42 +72,66 @@
   margin-left: 26px !important;
 }
 
+// .branding {
+//   padding: 20px;
+// }
+
 .sidebar-list {
   &.mdc-list {
-    padding: 0 24px;
+    padding: 0 15px;
 
     .mdc-list-group__subheader {
-      margin: 12px 0;
-      font-size: 0.75rem;
-      font-weight: 500;
-      margin-top: 24px;
+      margin: 24px 0 0;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 0px 0px 8px;
+      line-height: 19px;
+      text-transform: uppercase;
     }
 
     .menu-list-item {
-      border-radius: 7px;
-      height: 45px;
-      padding: 8px 10px !important;
-      margin-bottom: 2px;
-      &.twoline {
-        height: 60px;
-        align-items: center;
+      height: 47px;
+      display: flex;
+      font-size: 15px;
+      white-space: nowrap;
+      align-items: center;
+      line-height: 25px;
+      position: relative;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-weight: 400;
+      border-radius: 26px;
+      gap: 12px;
+
+      &:hover::before {
+        background-color: transparent !important;
       }
+
+      &:hover {
+
+        .mdc-list-item__start,
+        .mdc-list-item__primary-text {
+          color: $secondary;
+        }
+      }
+
       &:before,
       &:focus {
         z-index: -1;
       }
-      &.disabled {
-        opacity: 0.38;
-      }
+
 
       .item-chip {
-        height: 24px;
+        height: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 12px;
+        font-size: 10px;
       }
+
       &.activeMenu {
+        background-color: var(--mat-sys-secondary);
+
         .mdc-list-item__primary-text {
           color: $white !important;
         }
@@ -108,12 +142,11 @@
       }
 
       .mdc-list-item__start {
-        margin-right: 14px;
-        margin-left: 0 !important;
-        width: 20px;
-        height: 20px;
+        margin-right: 0;
+        margin-left: 0;
+        width: 22px;
+        height: 22px;
         fill: transparent !important;
-        color: $textPrimary;
       }
 
       .mdc-list-item__primary-text {
@@ -123,6 +156,7 @@
 
         .arrow-icon {
           display: flex;
+
           .mat-icon {
             font-size: 18px;
             width: 18px;

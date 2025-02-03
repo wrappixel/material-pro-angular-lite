@@ -10,7 +10,6 @@ import { AppProfileCardComponent } from 'src/app/components/profile-card/profile
 
 @Component({
   selector: 'app-starter',
-  standalone: true,
   imports: [
     MaterialModule,
     AppSalesOverviewComponent,
@@ -20,7 +19,6 @@ import { AppProfileCardComponent } from 'src/app/components/profile-card/profile
     AppActivityTimelineComponent
   ],
   templateUrl: './starter.component.html',
-  styleUrls: ['./starter.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
 export class StarterComponent { }

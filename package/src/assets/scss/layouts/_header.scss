@@ -1,45 +1,42 @@
+@use "../variables" as *;
+
 html .topbar {
-  background-color: $toolbar;
+  background-color: var(--mat-sys-primary);
   position: sticky;
-  top: 0;
-  z-index: 2;
+  top: 60px;
+  z-index: 9;
   height: $header-height;
-  box-shadow: 1px 0 10px #00000080;
+  box-shadow: var(--mat-sys-level2);
+
+  @media (max-width: 1199px){
+    top: 97px;
+  }
+
+  .mat-mdc-icon-button {
+    color: $white;
+  }
+}
+
+.branding {
+  width: $sidenav-desktop;
 }
 
 .topbar-dd {
-  min-width: 360px !important;
+  min-width: 220px !important;
+}
 
-  &.mat-mdc-menu-panel.mat-mdc-menu-panel {
-    overflow: unset;
-  }
+.upgrade-bg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
 }
 
 .object-cover {
   object-fit: cover;
 }
 
-@media (min-width: 768px) {
-  .branding {
-    width: $sidenav-desktop;
-  }
-}
-
-@media (max-width: 767px) {
-  .branding {
-    width: 40px;
-    overflow: hidden;
-  }
-}
-
-// perfect scroll
-.ps__rail-y {
-  right: 0;
-  left: unset !important;
-}
-
-
 .profile-dd {
-  margin-left: -5px !important;
   margin-top: -5px;
+  margin-left: -5px;
 }

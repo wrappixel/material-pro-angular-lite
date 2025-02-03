@@ -1,0 +1,71 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+@use "../variables" as *;
+
+@include mat.button-overrides(
+  (
+    protected-hover-container-elevation-shadow: var(--mat-sys-level1),
+    filled-horizontal-padding: 15px,
+    outlined-horizontal-padding: 15px,
+    protected-horizontal-padding: 15px,
+    text-horizontal-padding: 15px,
+    filled-container-shape: var(--mat-sys-corner-full),
+    outlined-container-shape: var(--mat-sys-corner-full),
+    protected-container-shape: var(--mat-sys-corner-full),
+    text-container-shape: var(--mat-sys-corner-full),
+    filled-label-text-weight: 400,
+    outlined-label-text-weight: 400,
+    protected-label-text-weight: 400,
+    text-label-text-weight: 400,
+  )
+);
+
+@include mat.icon-button-overrides(
+  (
+    icon-color: $text-color,
+  )
+);
+
+// styles
+html {
+  .mat-mdc-button-base.bg-light-primary:hover,
+  .mat-mdc-button-base.bg-light-secondary:hover,
+  .mat-mdc-button-base.bg-light-error:hover,
+  .mat-mdc-button-base.bg-light-warning:hover,
+  .mat-mdc-button-base.bg-light-success:hover {
+    color: $white !important;
+  }
+  .mat-mdc-button-base.bg-light-primary {
+    &:hover {
+      background-color: var(--mat-sys-primary) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-secondary {
+    &:hover {
+      background-color: var(--mat-sys-secondary) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-error {
+    &:hover {
+      background-color: var(--mat-sys-error) !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-warning {
+    &:hover {
+      background-color: $warning !important;
+    }
+  }
+
+  .mat-mdc-button-base.bg-light-success {
+    &:hover {
+      background-color: $success !important;
+    }
+  }
+
+  .mat-mdc-outlined-button:not(:disabled) {
+    border-color: inherit;
+  }
+}

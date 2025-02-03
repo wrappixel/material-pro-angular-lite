@@ -4,7 +4,6 @@ import { MaterialModule } from 'src/app/material.module';
 
 @Component({
   selector: 'app-activity-timeline',
-  standalone: true,
   imports: [MaterialModule, TablerIconsModule],
   templateUrl: './activity-timeline.component.html',
 })

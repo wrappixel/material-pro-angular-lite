@@ -34,11 +34,11 @@
             <mat-list>
               <mat-list-item>
                 <span matListItemTitle class="f-s-16 f-w-600">Title</span>
-                <span matListItemLine class="mat-body-1">Second line</span>
+                <span matListItemLine>Second line</span>
               </mat-list-item>
               <mat-list-item>
                 <span matListItemTitle class="f-s-16 f-w-600">Title</span>
-                <span matListItemLine class="mat-body-1">Second line</span>
+                <span matListItemLine>Second line</span>
               </mat-list-item>
             </mat-list>
           </mat-card-content>
@@ -57,15 +57,13 @@
             <mat-list>
               <mat-list-item>
                 <span matListItemTitle class="f-s-16 f-w-600">Title</span>
-                <span matListItemLine class="mat-body-1">Second line</span>
-                <span matListItemLine class="mat-body-1">Third line</span>
+                <span matListItemLine>Second line</span>
+                <span matListItemLine>Third line</span>
               </mat-list-item>
               <mat-list-item>
                 <span matListItemTitle class="f-s-16 f-w-600">Title</span>
-                <span matListItemLine class="mat-body-1"
-                  >Second line. This line will truncate.</span
-                >
-                <span class="mat-body-1">Third line</span>
+                <span matListItemLine>Second line. This line will truncate.</span>
+                <span>Third line</span>
               </mat-list-item>
             </mat-list>
           </mat-card-content>
@@ -84,16 +82,14 @@
             <mat-list style="max-width: 500px">
               <mat-list-item lines="3">
                 <span matListItemTitle class="f-s-16 f-w-600">Title</span>
-                <span class="mat-body-1"
-                  >Secondary line that will wrap because the list lines is
+                <span>Secondary line that will wrap because the list lines is
                   explicitly set to 3 lines. Text inside of a `matListItemTitle`
                   or `matListItemLine` will never wrap.
                 </span>
               </mat-list-item>
-              <mat-list-item lines="3" class="mat-body-1">
+              <mat-list-item lines="3">
                 <span matListItemTitle class="f-s-16 f-w-600">Title</span>
-                <span class="mat-body-1"
-                  >Secondary line that will wrap because the list lines is
+                <span>Secondary line that will wrap because the list lines is
                   explicitly set to 3 lines. Text inside of a `matListItemTitle`
                   or `matListItemLine` will never wrap.
                 </span>
@@ -120,7 +116,7 @@
               }
             </mat-selection-list>
 
-            <p class="mat-subtitle-2 f-w-600 p-16 bg-light-primary rounded">
+            <p class="f-w-600 p-16 bg-light-primary rounded">
               Options selected: {{ shoes.selectedOptions.selected.length }}
             </p>
           </mat-card-content>
@@ -144,12 +140,12 @@
               }
             </mat-selection-list>
 
-            <p class="mat-subtitle-2 f-w-600 p-16 bg-light-primary rounded">
+            <p class="f-w-600 p-16 bg-light-primary rounded">
               Option selected:
               {{
-                shoes2.selectedOptions.hasValue()
-                  ? shoes2.selectedOptions.selected[0].value
-                  : "None"
+              shoes2.selectedOptions.hasValue()
+              ? shoes2.selectedOptions.selected[0].value
+              : "None"
               }}
             </p>
           </mat-card-content>
@@ -166,28 +162,28 @@
           </mat-card-header>
           <mat-card-content class="b-t-1">
             <mat-list>
-              <div mat-subheader class="mat-body-2 m-b-16 f-w-600">Folders</div>
+              <div mat-subheader class="m-b-16 f-w-600">Folders</div>
               @for(folder of folders; track folder.name) {
               <mat-list-item>
                 <mat-icon matListItemIcon>folder</mat-icon>
-                <div matListItemTitle class="mat-body-2 f-w-600">
+                <div matListItemTitle class="f-w-600">
                   {{ folder.name }}
                 </div>
-                <div matListItemLine class="f-s-14 mat-body-1">
+                <div matListItemLine class="f-s-14 ">
                   {{ folder.updated | date }}
                 </div>
               </mat-list-item>
               }
 
               <mat-divider></mat-divider>
-              <div mat-subheader class="mat-body-2 m-y-16 f-w-600">Notes</div>
+              <div mat-subheader class="m-y-16 f-w-600">Notes</div>
               @for(note of notes; track note.name) {
               <mat-list-item>
                 <mat-icon matListItemIcon>note</mat-icon>
-                <div matListItemTitle class="mat-body-2 f-w-600">
+                <div matListItemTitle class="f-w-600">
                   {{ note.name }}
                 </div>
-                <div matListItemLine class="f-s-14 mat-body-1">
+                <div matListItemLine class="f-s-14 ">
                   {{ note.updated | date }}
                 </div>
               </mat-list-item>

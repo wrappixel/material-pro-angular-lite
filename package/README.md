@@ -1,2 +1,2 @@
-# Modernize-Angular-pro
-Modernize Angular Admin Dashboard
+# MaterialPro-Angular-pro
+MaterialPro Angular Admin Dashboard

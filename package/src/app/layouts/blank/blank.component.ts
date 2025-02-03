@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { CoreService } from 'src/app/services/core.service';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MaterialModule } from 'src/app/material.module';
@@ -8,9 +8,16 @@ import { MaterialModule } from 'src/app/material.module';
   selector: 'app-blank',
   templateUrl: './blank.component.html',
   styleUrls: [],
-  standalone: true,
   imports: [RouterOutlet, MaterialModule, CommonModule],
 })
 export class BlankComponent {
-  constructor() {}
+  private htmlElement!: HTMLHtmlElement;
+
+  options = this.settings.getOptions();
+
+  constructor(private settings: CoreService) {
+    this.htmlElement = document.querySelector('html')!;
+  }
+
+
 }

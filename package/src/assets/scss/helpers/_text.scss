@@ -1,64 +1,75 @@
-@use 'sass:map';
-@use 'variables';
+@use "sass:map";
+@use "variables";
 
 $utilities: (
-  'font-size': (
+  "font-size": (
     property: font-size,
     class: f-s,
-    values: variables.$font-sizes
+    values: variables.$font-sizes,
   ),
-  'font-weight': (
+  "font-weight": (
     property: font-weight,
     class: f-w,
-    values: variables.$font-wieghts
+    values: variables.$font-wieghts,
   ),
-  'font-style': (
+  "font-style": (
     property: font-style,
     class: font,
-    values: italic normal
+    values: italic normal,
   ),
-  'text-align': (
+  "text-align": (
     property: text-align,
     class: text,
-    values: center right left
+    values: center right left,
   ),
-  'text-decoration': (
+  "text-decoration": (
     property: text-decoration,
     class: text,
-    values: none underline line-through
+    values: none underline line-through,
   ),
-  'text-transform': (
+  "text-transform": (
     property: text-transform,
     class: text,
-    values: capitalize uppercase lowercase
+    values: capitalize uppercase lowercase,
   ),
-  'white-space': (
+  "white-space": (
     property: white-space,
     class: text,
     values: (
       wrap: normal,
-      nowrap: nowrap
-    )
+      nowrap: nowrap,
+    ),
   ),
-  'word-wrap': (
+  "word-wrap": (
     property: word-wrap word-break,
     class: text,
-    values: (break: break-word)
+    values: (
+      break: break-word,
+    ),
   ),
-  'text-overflow': (
+  "text-overflow": (
     property: text-overflow,
     class: text,
-    values: ellipsis
+    values: ellipsis,
   ),
-  'text-color': (
+  "text-color": (
     property: color,
     class: text,
     values: (
       reset: inherit,
-      current: currentColor
-    )
-  )
+      current: currentColor,
+    ),
+  ),
 );
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
 
 .lh-lg {
   line-height: 36px !important;

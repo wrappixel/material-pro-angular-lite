@@ -10,12 +10,7 @@
             <mat-card-title>Basic</mat-card-title>
           </mat-card-header>
           <mat-card-content class="b-t-1">
-            <button
-              mat-flat-button
-              color="primary"
-              class="m-t-8"
-              [matMenuTriggerFor]="menu"
-            >
+            <button mat-flat-button color="primary" class="m-t-8" [matMenuTriggerFor]="menu">
               Menu
             </button>
             <mat-menu #menu="matMenu" class="cardWithShadow">
@@ -31,11 +26,7 @@
             <mat-card-title>with Icons</mat-card-title>
           </mat-card-header>
           <mat-card-content class="b-t-1">
-            <button
-              mat-icon-button
-              [matMenuTriggerFor]="menu"
-              aria-label="Example icon-button with a menu"
-            >
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
               <mat-icon>
                 <i-tabler name="dots" class="icon-20"></i-tabler>
               </mat-icon>
@@ -63,12 +54,7 @@
             <mat-card-title>Nested Menu</mat-card-title>
           </mat-card-header>
           <mat-card-content class="b-t-1">
-            <button
-              mat-flat-button
-              color="primary"
-              [matMenuTriggerFor]="animals"
-              class="m-t-8"
-            >
+            <button mat-flat-button color="primary" [matMenuTriggerFor]="animals" class="m-t-8">
               Animal index
             </button>
             <mat-menu class="cardWithShadow" #animals="matMenu">

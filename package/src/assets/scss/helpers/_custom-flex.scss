@@ -4,12 +4,22 @@
       display: flex !important;
     }
 
+    .text-lg-left {
+      text-align: left !important;
+    }
+
     .d-lg-none {
       display: none !important;
     }
     .align-items-lg-center {
       align-items: center !important;
     }
+  }
+}
+
+@media (min-width: 960px) {
+  .d-md-none {
+    display: none !important;
   }
 }
 
@@ -35,6 +45,14 @@
   flex: 1 1 0%;
 }
 
-.list-style-none {
-  list-style: none;
+.hstack {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .hstack {
+    flex-direction: column;
+  }
 }

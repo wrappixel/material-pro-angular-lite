@@ -1,20 +1,17 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { Event, NavigationEnd, Router } from '@angular/router';
-import { BehaviorSubject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class NavService {
-    showClass: any = false;
-    public currentUrl = new BehaviorSubject<any>(undefined);
+  showClass: any = false;
 
-    constructor(private router: Router) {
-        this.router.events.subscribe((event: Event) => {
-            if (event instanceof NavigationEnd) {
-                this.currentUrl.next(event.urlAfterRedirects);
-            }
-        });
-    }
+  public currentUrl = signal<string | undefined>(undefined);
 
-
+  constructor(private router: Router) {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentUrl.set(event.urlAfterRedirects);
+      }
+    });
+  }
 }
-
