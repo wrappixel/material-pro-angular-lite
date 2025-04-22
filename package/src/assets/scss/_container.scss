@@ -13,23 +13,17 @@ body {
   color: var(--mat-sys-on-background);
 }
 
-.app-topstrip{
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
 .mainWrapper {
   display: flex;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 72px);
   width: 100%;
   flex: 1;
-  margin-top: 60px;
+  margin-top: 72px;
 }
 
-@media (max-width: 1199px){
+@media (max-width: 991px){
   .mainWrapper{
-    margin-top: 130px;
+    margin-top: 154px;
   }
 }
 
