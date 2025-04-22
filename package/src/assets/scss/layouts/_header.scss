@@ -8,8 +8,8 @@ html .topbar {
   height: $header-height;
   box-shadow: var(--mat-sys-level2);
 
-  @media (max-width: 1199px){
-    top: 130px;
+  @media (max-width: 991px){
+    top: 154px;
   }
 
   .mat-mdc-icon-button {
@@ -89,6 +89,7 @@ html .topbar {
 
   .live-preview-drop {
     border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 7px;
 
     &:hover,
     &:active {
@@ -99,6 +100,7 @@ html .topbar {
 
   .get-pro-btn {
     background-color: #8D70F8;
+    border-radius: 7px;
 
     &:hover {
       background-color: #714BFF;
@@ -107,7 +109,8 @@ html .topbar {
 
   .all-access-pass-btn {
     background-color: #B3F143;
-    color: #000000 !important; 
+    color: #000000 !important;
+    border-radius: 7px;
 
     &:hover {
       background-color: #90DE03;
