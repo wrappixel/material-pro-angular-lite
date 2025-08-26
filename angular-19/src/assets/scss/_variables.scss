@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,300,600,700&display=swap");
+
+// font
+$font-family: 'Poppins', sans-serif;
+
+// light color variable
+
+// Sidenav
+$sidenav-desktop: 260px !default;
+$sidenav-mini: 72px !default;
+$header-height: 60px !default;
+
+//BorderColor
+$borderColor: var(--mat-sys-outline-variant);
+$borderformColor: var(--mat-sys-outline-variant);
+
+// custom
+$primary: var(--mat-sys-primary);
+$secondary: var(--mat-sys-secondary);
+$accent: var(--mat-sys-secondary);
+$error: var(--mat-sys-error);
+$warning: #f6c000;
+$success: #2cd07e;
+$white: #ffffff;
+
+$light: var(--mat-sys-surface-bright);
+$light-primary: var(--mat-sys-primary-fixed-dim);
+$light-secondary: var(--mat-sys-secondary-fixed-dim);
+$light-accent: var(--mat-sys-secondary-fixed-dim);
+$light-error: var(--mat-sys-error-fixed-dim);
+$light-warning: rgba(246, 192, 0, 0.15);
+$light-success: rgba(44, 208, 126, 0.15);
+$dark: #3A4752;
+
+// layout
+$boxedWidth: 1300px;
+$border-radius: 10px;
+
+$card-spacer: 30px;
+
+$text-color: var(--mat-sys-on-background);
+
+$dark-text-secondary: rgba(255, 255, 255, 0.67);

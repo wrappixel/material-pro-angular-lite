@@ -1,0 +1,22 @@
+<mat-card class="cardWithShadow overflow-hidden">
+    <mat-card-header class="bg-primary p-b-24">
+        <mat-card-title class="text-white">My Contacts</mat-card-title>
+        <mat-card-subtitle class="text-white">Checkout my contacts here</mat-card-subtitle>
+    </mat-card-header>
+
+    <div class="msg-box p-b-16">
+        @for(msg of msgs; track msg.title) {
+        <div mat-menu-item class="p-x-24 p-y-16">
+            <div class="d-flex align-items-center w-100">
+                <img [src]="msg.img" class="rounded-circle" width="48" />
+                <div class="m-l-16">
+                    <h5 class="f-s-14 f-w-600 m-0">
+                        {{ msg.title }}
+                    </h5>
+                    <span class="f-s-14">{{ msg.subtitle }}</span>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</mat-card>

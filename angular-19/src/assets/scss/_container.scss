@@ -1,0 +1,138 @@
+@use "variables" as *;
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  line-height: 1.334rem;
+  overflow-x: hidden;
+  color: var(--mat-sys-on-background);
+}
+
+.mainWrapper {
+  display: flex;
+  min-height: calc(100vh - 72px);
+  width: 100%;
+  flex: 1;
+  margin-top: 72px;
+}
+
+@media (max-width: 991px){
+  .mainWrapper{
+    margin-top: 154px;
+  }
+}
+
+.container {
+  max-width: 1300px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 0 auto;
+
+  &.full-width {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.pageWrapper {
+  padding: 24px;
+  min-height: calc(100vh - 70px);
+
+  margin: 0 auto;
+
+  &.maxWidth {
+    max-width: $boxedWidth;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
+.rounded {
+  border-radius: $border-radius !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.rounded-pill {
+  border-radius: 25px !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.table-responsive {
+  overflow-x: auto;
+
+  td,
+  mat-cell {
+    white-space: nowrap;
+    padding: 16px;
+  }
+}
+
+.op-5 {
+  opacity: 0.5;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a {
+  color: var(--mat-sys-on-background);
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+pre {
+  margin: 0;
+  white-space: nowrap;
+}
+
+td.hljs-ln-line.hljs-ln-numbers {
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) {
+  html .flex-sm-row {
+    flex-direction: row !important;
+  }
+}

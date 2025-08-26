@@ -1,0 +1,135 @@
+@use "../variables" as *;
+
+html .topbar {
+  background-color: var(--mat-sys-primary);
+  position: sticky;
+  top: 72px;
+  z-index: 9;
+  height: $header-height;
+  box-shadow: var(--mat-sys-level2);
+
+  @media (max-width: 991px){
+    top: 154px;
+  }
+
+  .mat-mdc-icon-button {
+    color: $white;
+  }
+}
+
+.branding {
+  width: $sidenav-desktop;
+}
+
+.topbar-dd {
+  min-width: 220px !important;
+}
+
+.upgrade-bg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.profile-dd {
+  margin-top: -5px;
+  margin-left: -5px;
+}
+
+
+// App Topstrip
+
+.app-topstrip {
+  position: fixed;
+  top: 0;
+  z-index: 12;
+  display: flex;
+  background: linear-gradient(90deg, #0F0533 0%, #1B0A5C 100%);
+
+  @media (max-width: 991px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .topstrip-right {
+    display: flex;
+
+    @media (max-width: 991px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .topstrip-right-inner {
+    display: flex;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  .linkbar {
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 20px;
+  }
+
+  .text-linear-gradient {
+    background: linear-gradient(90deg, #FFFFFF 0%, #8D70F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .live-preview-drop {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 7px;
+
+    &:hover,
+    &:active {
+      background-color: #8D70F8;
+    }
+
+  }
+
+  .get-pro-btn {
+    background-color: #8D70F8;
+    border-radius: 7px;
+
+    &:hover {
+      background-color: #714BFF;
+    }
+  }
+
+  .all-access-pass-btn {
+    background-color: #B3F143;
+    color: #000000 !important;
+    border-radius: 7px;
+
+    &:hover {
+      background-color: #90DE03;
+    }
+  }
+
+  .link-hover {
+    height: auto;
+
+    &:hover,
+    &:active {
+      color: #714BFF !important;
+
+      .mat-mdc-button-persistent-ripple {
+        &::before {
+          opacity: 0 !important;
+        }
+      }
+    }
+  }
+
+}
