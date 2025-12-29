@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CoreService } from 'src/app/services/core.service';
-import { CommonModule } from '@angular/common';
+
 import { RouterOutlet } from '@angular/router';
 import { MaterialModule } from 'src/app/material.module';
 
@@ -8,7 +8,7 @@ import { MaterialModule } from 'src/app/material.module';
   selector: 'app-blank',
   templateUrl: './blank.component.html',
   styleUrls: [],
-  imports: [RouterOutlet, MaterialModule, CommonModule],
+  imports: [RouterOutlet, MaterialModule],
 })
 export class BlankComponent {
   private htmlElement!: HTMLHtmlElement;
