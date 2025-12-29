@@ -39,8 +39,8 @@
     --radius-md: var(--mat-sys-corner-medium);
 
     /* Shadow */
-    --shadow-sm: 0px 2px 4px -1px rgba(175, 182, 201, 0.2);
-    --shadow-md: 0 15px 30px rgba(0, 0, 0, 0.12);
+    --shadow-sm: 0px 12px 24px -4px rgb(145 158 171 / 30%);
+    --shadow-md: rgba(145, 158, 171, 0.12) 0px 1px 16px;
 }
 
 @layer base {
