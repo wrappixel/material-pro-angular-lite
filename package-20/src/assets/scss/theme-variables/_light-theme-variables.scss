@@ -1,0 +1,24 @@
+html .light-theme {
+  color-scheme: light;
+  --mat-sys-corner-small: 10px;
+  --mat-sys-background: #eef5f9;
+  --mat-sys-surface-bright: #f2f2f2;
+  --mat-sys-surface: #fff;
+  --mat-sys-surface-container: #fff;
+  --mat-sys-surface-container-low: #fff;
+  --mat-sys-surface-container-lowest: #768b9e;
+  --mat-sys-on-background: #3a4752;
+  --mat-sys-outline: #ebf1f6;
+  --mat-sys-outline-variant: #ebf1f6;
+  --mdc-outlined-text-field-hover-outline-color: #ebf1f6;
+  --mdc-checkbox-unselected-hover-state-layer-color: #ebf1f6;
+  --mat-menu-item-hover-state-layer-color: #f6f9fc;
+  --mat-standard-button-toggle-state-layer-color: #f6f9fc;
+  --mat-option-focus-state-layer-color: #f6f9fc;
+  --mat-option-hover-state-layer-color: #f6f9fc;
+  --mdc-switch-unselected-track-color: #f6f9fc;
+  --mat-stepper-header-focus-state-layer-color: #f6f9fc;
+  --mat-stepper-header-hover-state-layer-color: #f6f9fc;
+  --mdc-dialog-supporting-text-color: var(--mat-sys-on-background);
+  --mat-expansion-header-hover-state-layer-color: #f6f9fc;
+}

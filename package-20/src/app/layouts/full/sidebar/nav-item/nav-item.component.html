@@ -1,0 +1,48 @@
+@if(item.navCap){
+<div mat-subheader class="nav-caption">
+  {{ item.navCap }}
+</div>
+} @if(!item.navCap && !item.external) {
+<a mat-list-item (click)="onItemSelected(item)" [ngClass]="{
+    activeMenu: item.route ? router.isActive(item.route, true) : false,
+    expanded: expanded,
+    disabled: item.disabled
+  }" class="menu-list-item">
+  <i-tabler class="routeIcon" name="{{ item.iconName }}" matListItemIcon></i-tabler>
+  <span class="hide-menu">{{ item.displayName }}</span>
+  
+  @if(item.children && item.children.length) {
+  <span class="arrow-icon" fxFlex>
+    <span fxFlex></span>
+    @if(item.chip) {
+      <span>
+        <span class="{{ item.chipClass }} p-x-8 p-y-4 item-chip f-w-500 rounded-pill ">{{ item.chipContent }}</span>
+      </span>
+      }
+    <mat-icon [@indicatorRotate]="expanded ? 'expanded' : 'collapsed'">
+      expand_more
+    </mat-icon>
+  </span>
+  }
+</a>
+}
+
+<!-- external Link -->
+
+@if(!item.navCap && item.external) {
+<mat-list-item (click)="openExternalLink(item.route)" class="menu-list-item" target="_blank">
+  <i-tabler class="routeIcon" name="{{ item.iconName }}" matListItemIcon></i-tabler>
+  <span class="hide-menu">{{ item.displayName }} </span>
+  @if(item.chip) {
+  <span>
+    <span class="{{ item.chipClass }} p-x-8 p-y-4 item-chip f-w-500 rounded-pill ">{{ item.chipContent }}</span>
+  </span>
+  }
+</mat-list-item>
+}
+
+<!-- children -->
+@if(expanded) { @for(child of item.children; track child) {
+<app-nav-item [item]="child" (click)="onSubItemSelected(child)" [depth]="depth + 1">
+</app-nav-item>
+} }

@@ -1,0 +1,50 @@
+<mat-toolbar class="topbar gap-10">
+
+  <app-branding></app-branding>
+
+  <!-- Mobile Menu -->
+  
+  <button mat-icon-button (click)="toggleMobileNav.emit()" class="d-flex d-lg-none justify-content-center">
+    <i-tabler name="menu-2" class="icon-20 d-flex"></i-tabler>
+  </button>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Notifications">
+    <i-tabler class="d-flex" name="bell"></i-tabler>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+
+
+  <span class="flex-1-auto"></span>
+
+  <!-- --------------------------------------------------------------- -->
+  <!-- profile Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+  <a mat-flat-button href="https://www.wrappixel.com/templates/materialpro-angular-dashboard/?ref=376#demos"
+    target="_blank" class="d-flex justify-content-center bg-success">
+    Check Pro Template
+  </a>
+  <button mat-mini-fab [matMenuTriggerFor]="profilemenu" aria-label="Notifications">
+    <img src="/assets/images/profile/user-1.jpg" class="rounded-circle object-cover d-block" width="35" />
+  </button>
+  <mat-menu #profilemenu="matMenu" class="cardWithShadow topbar-dd">
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i-tabler name="user" class="icon-18 d-flex"></i-tabler></mat-icon>My
+      Profile
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i-tabler name="mail" class="icon-18 d-flex"></i-tabler></mat-icon>My
+      Account
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i-tabler name="list-check"
+          class="icon-18 d-flex"></i-tabler></mat-icon>My Task
+    </button>
+
+    <div class="p-x-12 m-t-12">
+      <a [routerLink]="['/authentication/login']" mat-stroked-button class="w-100">Logout</a>
+    </div>
+  </mat-menu>
+</mat-toolbar>

@@ -1,0 +1,25 @@
+<mat-card class="cardWithShadow">
+  <mat-card-content>
+    <div>
+      <mat-card-title>Sales Overview</mat-card-title>
+      <mat-card-subtitle>Ample Admin Vs Pixel Admin</mat-card-subtitle>
+    </div>
+    <div>
+      <apx-chart [series]="salesChart.series" [dataLabels]="salesChart.dataLabels" [chart]="salesChart.chart"
+        [legend]="salesChart.legend" [xaxis]="salesChart.xaxis" [yaxis]="salesChart.yaxis" [grid]="salesChart.grid"
+        [stroke]="salesChart.stroke" [fill]="salesChart.fill" [tooltip]="salesChart.tooltip"
+        [plotOptions]="salesChart.plotOptions"></apx-chart>
+    </div>
+
+    <div class="d-flex align-items-center justify-content-center gap-30">
+      <div class="d-flex align-items-center gap-8">
+        <i-tabler name="circle-filled" class="text-primary icon-12 d-flex"></i-tabler>
+        <span class="text-primary">Pixel</span>
+      </div>
+      <div class="d-flex align-items-center gap-8">
+        <i-tabler name="circle-filled" class="text-secondary icon-12 d-flex"></i-tabler>
+        <span class="text-secondary">Ample</span>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
